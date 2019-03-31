@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" fill="none"><path fill="#fff" fill-rule="evenodd" d="M36.5 73C56.658 73 73 56.658 73 36.5S56.658 0 36.5 0 0 16.342 0 36.5 16.342 73 36.5 73z" clip-rule="evenodd"/>
+  <mask id="a" width="73" height="73" x="0" y="0"><path fill="#fff" fill-rule="evenodd" d="M36.5 73C56.658 73 73 56.658 73 36.5S56.658 0 36.5 0 0 16.342 0 36.5 16.342 73 36.5 73z" clip-rule="evenodd"/></mask>
+  <g mask="url(#a)"><path fill="url(#b)" d="M23.025 42.344h27.983v8.517H23.025z" transform="rotate(-41 23.025 42.344)"/><path fill="#1039c8" d="M23.025 71.3l21.119-18.358 5.587 6.427-21.119 18.359zm.487-57.913L44.63-4.972l5.587 6.428L29.1 19.815z"/><path fill="#667fff" fill-rule="evenodd" d="M23.36 12.653l26.037 9.178v8.342L23.36 20.996v-8.343zm0 28.957l26.037 9.177v8.343L23.36 49.953V41.61z" clip-rule="evenodd"/></g>
+  <defs>
+    <linearGradient id="b" x1="48.707" x2="25.202" y1="43.025" y2="43.025"><stop stop-color="#0039c8"/><stop offset="1" stop-color="#0039c8"/></linearGradient>
+  </defs>
+</svg>

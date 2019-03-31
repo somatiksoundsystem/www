@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url("../fonts/sourcesanspro/SourceSansPro-ExtraLight.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro ExtraLight Italic"), local("SourceSansPro-ExtraLightIt"), url("../fonts/sourcesanspro/SourceSansPro-ExtraLightIt.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-ExtraLightIt.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("../fonts/sourcesanspro/SourceSansPro-Light.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Light Italic"), local("SourceSansPro-LightIt"), url("../fonts/sourcesanspro/SourceSansPro-LightIt.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("../fonts/sourcesanspro/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Italic"), local("SourceSansPro-It"), url("../fonts/sourcesanspro/SourceSansPro-It.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-It.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("../fonts/sourcesanspro/SourceSansPro-Semibold.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Semibold Italic"), local("SourceSansPro-SemiboldIt"), url("../fonts/sourcesanspro/SourceSansPro-SemiboldIt.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-SemiboldIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("../fonts/sourcesanspro/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldIt"), url("../fonts/sourcesanspro/SourceSansPro-BoldIt.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-BoldIt.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Black"), local("SourceSansPro-Black"), url("../fonts/sourcesanspro/SourceSansPro-Black.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: local("Source Sans Pro Black Italic"), local("SourceSansPro-BlackIt"), url("../fonts/sourcesanspro/SourceSansPro-BlackIt.woff2") format("woff2"), url("../fonts/sourcesanspro/SourceSansPro-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Regular"), url("AvenirNext/AvenirNextCyr-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Italic"), url("AvenirNext/AvenirNextCyr-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Demi"), url("AvenirNext/AvenirNextCyr-Demi.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-DemiItalic"), url("AvenirNext/AvenirNextCyr-DemiItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Thin"), url("AvenirNext/AvenirNextCyr-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-UltraLight"), url("AvenirNext/AvenirNextCyr-UltraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-ThinItalic"), url("AvenirNext/AvenirNextCyr-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-UltraLightIt"), url("AvenirNext/AvenirNextCyr-UltraLightIt.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Light"), url("AvenirNext/AvenirNextCyr-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-LightItalic"), url("AvenirNext/AvenirNextCyr-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Medium"), url("AvenirNext/AvenirNextCyr-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-MediumItalic"), url("AvenirNext/AvenirNextCyr-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Bold"), url("AvenirNext/AvenirNextCyr-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-BoldItalic"), url("AvenirNext/AvenirNextCyr-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-Heavy"), url("AvenirNext/AvenirNextCyr-Heavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirNextCyr-HeavyItalic"), url("AvenirNext/AvenirNextCyr-HeavyItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Clementhorp";
+  src: url("Clementhorp/Clementhorp.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
