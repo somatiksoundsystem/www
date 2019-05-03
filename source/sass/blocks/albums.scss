@@ -1,3 +1,5 @@
+$transparent-background: rgba($color-black, 0.55);
+
 .albums {
   display: flex;
   flex-direction: row;
@@ -15,7 +17,7 @@
   font-size: 16px;
   padding: 5px;
   margin-bottom: 5px;
-  background-color: $color-black;
+  background-color: $transparent-background;
   color: $color-white;
 }
 
@@ -24,7 +26,7 @@
   font-size: 16px;
   padding: 5px;
   margin-bottom: 0;
-  background-color: $color-black;
+  background-color: $transparent-background;
   color: $color-white;
 }
 
