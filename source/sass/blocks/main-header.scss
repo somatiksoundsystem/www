@@ -1,9 +1,10 @@
-.main-header{
-  background-color: $color-white;
-  min-width: 85px;
+.main-header {
+	background-color: $color-white;
+	min-width: 85px;
 }
-.main-header__container{
-  @include container;
-  display: flex;
-  flex-direction: row;
+
+.main-header__container {
+	@include container;
+	display: flex;
+	flex-direction: row;
 }
