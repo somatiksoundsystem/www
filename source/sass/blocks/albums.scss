@@ -1,4 +1,4 @@
-.albums{
+.albums {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,18 +7,19 @@
   list-style: none;
 }
 
-.albums__item{
-  margin-right: 20px;
-  margin-bottom: 20px;
+.albums__item {
+  margin: 0 auto 20px auto;
 }
-.albums__author{
+
+.albums__author {
   font-size: 16px;
   padding: 5px;
   margin-bottom: 5px;
   background-color: $color-black;
   color: $color-white;
 }
-.albums__title{
+
+.albums__title {
   text-transform: capitalize;
   font-size: 16px;
   padding: 5px;
@@ -26,7 +27,8 @@
   background-color: $color-black;
   color: $color-white;
 }
-.albums__img{
+
+.albums__img {
   width: 200px;
   height: 200px;
 }

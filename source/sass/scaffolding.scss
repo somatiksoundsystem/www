@@ -21,6 +21,7 @@ body {
   background-color: $color-white;
   color: $color-black;
   -webkit-font-smoothing: antialiased;
+  //noinspection CssUnknownProperty
   -moz-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
