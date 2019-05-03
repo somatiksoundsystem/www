@@ -13,6 +13,10 @@ const paths = {
     src: 'source/*.html',
     dest: 'build/'
   },
+  favicon: {
+    src: 'source/favicon/*.*',
+    dest: 'build/'
+  },
   images: {
     src: 'source/img/**/*',
     dest: 'build/img/'
@@ -85,6 +89,11 @@ gulp.task('html', () => {
     pipe(gulp.dest(paths.html.dest));
 });
 
+gulp.task('favicon', () => {
+  return gulp.src(paths.favicon.src).
+    pipe(gulp.dest(paths.favicon.dest));
+});
+
 gulp.task('images', () => {
   return gulp.src(paths.images.src).
     pipe(gulp.dest(paths.images.dest));
@@ -95,7 +104,7 @@ gulp.task('fonts', () => {
     pipe(gulp.dest(paths.fonts.dest));
 });
 
-gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts'));
+gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'favicon'));
 
 gulp.task('clean', () => del(['build']));
 
@@ -106,7 +115,7 @@ gulp.task('start', gulp.series('build', 'server'));
 
 const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function() {
-  return gulp.src('build/**/*')
-  .pipe(ghPages());
+gulp.task('deploy', () => {
+  return gulp.src('build/**/*').
+    pipe(ghPages());
 });
