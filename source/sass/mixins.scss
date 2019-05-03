@@ -1,19 +1,19 @@
 @mixin container {
-	padding: 0 20px;
+  padding: 0 20px;
 
-	@media screen and (min-width: $tablet-breakpoint) {
-		padding: 0 40px;
-	}
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 0 40px;
+  }
 
-	@media screen and (min-width: $mid-desktop-breakpoint) {
-		// width: 900px;
-		padding: 0 100px;
-	}
+  @media screen and (min-width: $mid-desktop-breakpoint) {
+    // width: 900px;
+    padding: 0 100px;
+  }
 
-	@media screen and (min-width: $big-desktop-breakpoint) {
-		width: 1400px;
-		margin: 0 auto;
-	}
+  @media screen and (min-width: $big-desktop-breakpoint) {
+    width: 1400px;
+    margin: 0 auto;
+  }
 }
 // @mixin heading{
 //   margin-bottom: 10px;

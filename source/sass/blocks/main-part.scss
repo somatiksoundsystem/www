@@ -1,15 +1,15 @@
 .main-part {
-	background-image: url("../img/bg_main1.jpg");
-	background-size: cover;
-	background-position: top right;
-	background-repeat: no-repeat;
-	padding-top: 80px;
-	//min-height: calc(100vh - 65px);
-	// margin-top: -20px;
-	position: relative;
-	top: -20px;
+  background-image: url("../img/bg_main1.jpg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  //min-height: calc(100vh - 65px);
+  // margin-top: -20px;
+  position: relative;
+  top: -20px;
 }
 
 .main-part__container {
-	@include container;
+  @include container;
 }
