@@ -14,23 +14,23 @@
   .navigation__menu {
     display: block;
   }
-}
 
-&--closed {
-  position: absolute;
-  z-index: 1;
-  background-color: rgba($color-black, 0.5);
+  &--closed {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba($color-black, 0.5);
 
-  .navigation__button svg:first-child {
-    display: block;
-  }
+    .navigation__button svg:first-child {
+      display: block;
+    }
 
-  .navigation__button svg:last-child {
-    display: none;
-  }
+    .navigation__button svg:last-child {
+      display: none;
+    }
 
-  .navigation__menu {
-    display: none;
+    .navigation__menu {
+      display: none;
+    }
   }
 }
 
