@@ -98,17 +98,16 @@ const imagemin = require('gulp-imagemin');
 
 gulp.task('images', () => {
   return gulp.src(paths.images.src).
-    pipe(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.optipng({optimizationLevel: 5}),
-      imagemin.svgo({
-        plugins: [
-          {removeViewBox: true},
-          {cleanupIDs: false}
-        ]
-      })
-    ])).
+    pipe(imagemin({
+      interlaced: true,
+      progressive: true,
+      optimizationLevel: 5,
+      svgoPlugins: [
+        {
+          removeViewBox: true
+        }
+      ]
+    }, true)).
     pipe(gulp.dest(paths.images.dest));
 });
 
