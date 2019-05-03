@@ -1,6 +1,6 @@
 {
   "name": "somatik",
-  "version": "15.0.0",
+  "version": "19.0.0",
   "private": true,
   "description": "Somatik Web Portal",
   "devDependencies": {
