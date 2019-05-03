@@ -1,13 +1,13 @@
 {
-  "name": "chtivo",
+  "name": "somatik",
   "version": "15.0.0",
   "private": true,
-  "description": "Сайт издательства Чтиво",
+  "description": "Somatik Web Portal",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
-    "browser-sync": "^2.26.3",
-    "gulp": "4.0.x",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.1",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
