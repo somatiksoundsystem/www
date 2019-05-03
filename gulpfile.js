@@ -106,7 +106,7 @@ gulp.task('fonts', () => {
 
 gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'favicon'));
 
-gulp.task('clean', () => del(['build']));
+gulp.task('clean', () => del(['build', '.publish']));
 
 gulp.task('build', gulp.series('clean', 'copy'));
 
@@ -115,7 +115,6 @@ gulp.task('start', gulp.series('build', 'server'));
 
 const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', () => {
-  return gulp.src('build/**/*').
-    pipe(ghPages());
-});
+const deploy = () => gulp.src('build/**/*').pipe(ghPages());
+
+gulp.task('deploy', gulp.series('build', deploy, 'clean'));
