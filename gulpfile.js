@@ -59,7 +59,8 @@ gulp.task('style', () => {
     pipe(cleanCSS()).
     pipe(sourcemaps.write()).
     pipe(rename('style.min.css')).
-    pipe(gulp.dest(paths.styles.dest));
+    pipe(gulp.dest(paths.styles.dest)).
+    pipe(server.stream());
 });
 
 
