@@ -74,7 +74,7 @@ gulp.task('server', () => {
     ui: false
   });
 
-  gulp.watch(paths.styles.src, gulp.series('style'));
+  gulp.watch('source/sass/**/*.scss', gulp.series('style'));
   gulp.watch(paths.html.src, gulp.series('html')).
     on('change', server.reload);
 });
