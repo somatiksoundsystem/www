@@ -124,9 +124,10 @@ gulp.task('build', gulp.series('clean', 'copy'));
 
 gulp.task('start', gulp.series('build', 'server'));
 
+const ghPages = require('gh-pages');
 
-const ghPages = require('gulp-gh-pages');
+const deploy = (cb) => {
+  ghPages.publish('build', cb);
+};
 
-const deploy = () => gulp.src('build/**/*').pipe(ghPages());
-
-gulp.task('deploy', gulp.series('build', deploy, 'clean'));
+gulp.task('deploy', gulp.series('build', deploy));
