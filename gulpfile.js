@@ -59,7 +59,8 @@ gulp.task('style', () => {
     pipe(cleanCSS()).
     pipe(sourcemaps.write()).
     pipe(rename('style.min.css')).
-    pipe(gulp.dest(paths.styles.dest));
+    pipe(gulp.dest(paths.styles.dest)).
+    pipe(server.stream());
 });
 
 
@@ -74,9 +75,8 @@ gulp.task('server', () => {
     ui: false
   });
 
-  gulp.watch(paths.styles.src, gulp.series('style'));
-  gulp.watch(paths.html.src, gulp.series('html')).
-    on('change', server.reload);
+  gulp.watch('source/sass/**/*.scss', gulp.series('style'));
+  gulp.watch(paths.html.src, gulp.series('html'));
 });
 
 gulp.task('scripts', (done) => {

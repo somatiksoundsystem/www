@@ -4,13 +4,14 @@ $transparent-background: rgba($color-black, 0.55);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .albums__item {
-  margin: 0 auto 20px auto;
+  margin: 0 10px 20px;
 }
 
 .albums__author {
@@ -33,4 +34,10 @@ $transparent-background: rgba($color-black, 0.55);
 .albums__img {
   width: 200px;
   height: 200px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .albums {
+    justify-content: flex-start;
+  }
 }
