@@ -6,8 +6,12 @@
 .header__container {
   @include container;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+
+  @media screen and (min-width: $big-mobile-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 .header__logo {
