@@ -6,21 +6,32 @@
 .header__container {
   @include container;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $big-mobile-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 .header__logo {
+  position: relative;
+  z-index: 1;
+  top: 20px;
   margin-right: 75px;
-  padding-top: 15px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  position: relative;
-  z-index: 1;
 
   img {
     width: 80px;
     height: 80px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: $big-mobile-breakpoint) {
+  .header__container {
+    flex-wrap: nowrap;
   }
 }

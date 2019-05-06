@@ -15,10 +15,14 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  background-color: $color-white;
+  background-image: url("../img/pattern-4.jpg");
+  background-position: top right;
+  background-repeat: repeat;
   font-size: 16px;
   font-family: $primary-font-family;
   font-weight: 500;
-  background-color: $color-white;
   color: $color-white-black;
   -webkit-font-smoothing: antialiased;
   //noinspection CssUnknownProperty
