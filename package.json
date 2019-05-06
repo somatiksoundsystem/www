@@ -40,7 +40,6 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
