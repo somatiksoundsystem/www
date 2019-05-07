@@ -8,9 +8,9 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 0;
-  // height: 100vh;
   overflow: hidden;
   padding: 0;
+  margin: 0;
   list-style: none;
   transition: max-height 1s, padding 1s;
 
@@ -22,6 +22,7 @@
 
 
 .navigation__item {
+  width: 100%;
   margin: 5px 10px 5px 0;
 
   font-size: 28px;
@@ -87,6 +88,8 @@
 
 @media screen and (min-width: $big-mobile-breakpoint) {
   .navigation__list {
+    flex-direction: row;
+
     &--open {
       max-height: 200px;
     }
@@ -101,7 +104,10 @@
 
   .navigation__list {
     max-height: 200px;
-    // height: auto;
+  }
+
+  .navigation__item{
+    width: auto;
   }
 
   .navigation__button {
