@@ -25,6 +25,10 @@ const paths = {
     src: 'source/fonts/**/*',
     dest: 'build/fonts/'
   },
+  cname: {
+    src: 'CNAME',
+    dest: 'build/'
+  },
   scripts: {
     src: 'source/scripts/**/*.js',
     dest: 'build/scripts/'
@@ -116,6 +120,15 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest(paths.fonts.dest));
 });
 
+
+gulp.task('cname', () => {
+  return gulp.src(paths.cname.src)
+    .pipe(gulp.dest(paths.cname.dest));
+});
+
+
+gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'cname', 'favicon'));
+
 const imageResize = require('gulp-image-resize');
 
 gulp.task('resize', function () {
@@ -133,8 +146,6 @@ gulp.task('resize', function () {
     }))
     .pipe(gulp.dest('dist'));
 });
-
-gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'favicon'));
 
 gulp.task('clean', () => del(['build']));
 
