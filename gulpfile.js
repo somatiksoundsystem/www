@@ -40,10 +40,10 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 
 gulp.task('style', () => {
-  return gulp.src(paths.styles.src).
-    pipe(plumber()).
-    pipe(sass()).
-    pipe(postcss([
+  return gulp.src(paths.styles.src)
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
       autoprefixer({
         browsers: [
           'last 1 version',
@@ -54,13 +54,13 @@ gulp.task('style', () => {
         ]
       }),
       mqpacker({sort: true})
-    ])).
-    pipe(sourcemaps.init()).
-    pipe(cleanCSS()).
-    pipe(sourcemaps.write()).
-    pipe(rename('style.min.css')).
-    pipe(gulp.dest(paths.styles.dest)).
-    pipe(server.stream());
+    ]))
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest(paths.styles.dest))
+    .pipe(server.stream());
 });
 
 
@@ -85,20 +85,20 @@ gulp.task('scripts', (done) => {
 
 
 gulp.task('html', () => {
-  return gulp.src(paths.html.src).
-    pipe(gulp.dest(paths.html.dest));
+  return gulp.src(paths.html.src)
+    .pipe(gulp.dest(paths.html.dest));
 });
 
 gulp.task('favicon', () => {
-  return gulp.src(paths.favicon.src).
-    pipe(gulp.dest(paths.favicon.dest));
+  return gulp.src(paths.favicon.src)
+    .pipe(gulp.dest(paths.favicon.dest));
 });
 
 const imagemin = require('gulp-imagemin');
 
 gulp.task('images', () => {
-  return gulp.src(paths.images.src).
-    pipe(imagemin({
+  return gulp.src(paths.images.src)
+    .pipe(imagemin({
       interlaced: true,
       progressive: true,
       optimizationLevel: 5,
@@ -107,31 +107,31 @@ gulp.task('images', () => {
           removeViewBox: true
         }
       ]
-    }, true)).
-    pipe(gulp.dest(paths.images.dest));
+    }, true))
+    .pipe(gulp.dest(paths.images.dest));
 });
 
 gulp.task('fonts', () => {
-  return gulp.src(paths.fonts.src).
-    pipe(gulp.dest(paths.fonts.dest));
+  return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest));
 });
 
 const imageResize = require('gulp-image-resize');
 
 gulp.task('resize', function () {
-  return gulp.src('source/img/**/album_*.jpg').
-    pipe(imageResize({
+  return gulp.src('source/img/**/album_*.jpg')
+    .pipe(imageResize({
       width: 200,
       height: 200,
       crop: false,
       upscale: false,
       interlace: true
-    })).
-    pipe(rename((path) => {
+    }))
+    .pipe(rename((path) => {
       const name = path.basename.substr('album_'.length);
       path.basename = `album_thumb_${name}`;
-    })).
-    pipe(gulp.dest('dist'));
+    }))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'favicon'));
