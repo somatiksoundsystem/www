@@ -116,6 +116,24 @@ gulp.task('fonts', () => {
     pipe(gulp.dest(paths.fonts.dest));
 });
 
+const imageResize = require('gulp-image-resize');
+
+gulp.task('resize', function () {
+  return gulp.src('source/img/**/album_*.jpg').
+    pipe(imageResize({
+      width: 200,
+      height: 200,
+      crop: false,
+      upscale: false,
+      interlace: true
+    })).
+    pipe(rename((path) => {
+      const name = path.basename.substr('album_'.length);
+      path.basename = `album_thumb_${name}`;
+    })).
+    pipe(gulp.dest('dist'));
+});
+
 gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'favicon'));
 
 gulp.task('clean', () => del(['build', '.publish']));
