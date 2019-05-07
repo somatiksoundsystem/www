@@ -136,7 +136,7 @@ gulp.task('resize', function () {
 
 gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'favicon'));
 
-gulp.task('clean', () => del(['build', '.publish']));
+gulp.task('clean', () => del(['build']));
 
 gulp.task('build', gulp.series('clean', 'copy'));
 
@@ -148,4 +148,4 @@ const deploy = (cb) => {
   ghPages.publish('build', cb);
 };
 
-gulp.task('deploy', gulp.series('build', deploy));
+gulp.task('deploy', gulp.series('build', deploy, 'clean'));
