@@ -1,6 +1,10 @@
 .header {
-  background-color: $color-black;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 10;
   min-width: 85px;
+  background-color: $color-black;
 }
 
 .header__container {
@@ -17,8 +21,9 @@
 .header__logo {
   position: relative;
   z-index: 1;
-  top: 20px;
-  margin-right: 15px;
+  top: 13px;
+  margin-right: 75px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -30,8 +35,13 @@
   }
 }
 
-@media screen and (min-width: $big-mobile-breakpoint) {
+@media screen and (min-width: $tablet-breakpoint) {
   .header__container {
     flex-wrap: nowrap;
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+    top: 20px;
   }
 }
