@@ -6,7 +6,6 @@ var menu = navigation.querySelector('.navigation__list');
 
 navigationButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  console.log('click');
   menu.classList.toggle('navigation__list--open');
   navigationButton.classList.toggle('navigation__button--close');
 });
