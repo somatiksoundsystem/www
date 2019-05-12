@@ -13,7 +13,7 @@
   list-style: none;
   padding: 0 0 10px;
 
-  &--close {
+  &--open {
     max-height: 100vh;
     padding: 0;
   }
@@ -69,7 +69,7 @@
     bottom: -10px;
   }
 
-  &--close {
+  &--open {
     background-color: transparent;
 
     &::before {
