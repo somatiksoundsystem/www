@@ -80,11 +80,16 @@ gulp.task('server', () => {
   });
 
   gulp.watch('source/sass/**/*.scss', gulp.series('style'));
-  gulp.watch(paths.html.src, gulp.series('html'));
+  gulp.watch(paths.html.src, gulp.series('html')).
+      on('change', server.reload);
+  gulp.watch(paths.scripts.src, gulp.series('scripts')).
+      on('change', server.reload);
 });
 
-gulp.task('scripts', (done) => {
-  done();
+gulp.task('scripts', () => {
+  // done();
+  return gulp.src(paths.scripts.src).
+    pipe(gulp.dest(paths.scripts.dest));
 });
 
 

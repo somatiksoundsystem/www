@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  min-width: 300px;
   min-height: 100vh;
   background-color: $color-white;
   background-image: url("../img/pattern-4.jpg");

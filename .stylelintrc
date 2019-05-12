@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-htmlacademy",
   "rules": {
-    "unit-whitelist": ["em", "%", "px", "vh"]
+    "unit-whitelist": ["em", "%", "px", "vh", "s", "deg"]
   }
 }
