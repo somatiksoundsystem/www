@@ -9,13 +9,13 @@
   flex-wrap: wrap;
   max-height: 0;
   overflow: hidden;
-  padding: 0;
   margin: 0;
   list-style: none;
+  padding: 0 0 10px;
 
-  &--open {
+  &--close {
     max-height: 100vh;
-    padding-bottom: 10px;
+    padding: 0;
   }
 }
 
@@ -88,10 +88,7 @@
 @media screen and (min-width: $big-mobile-breakpoint) {
   .navigation__list {
     flex-direction: row;
-
-    &--open {
-      max-height: 200px;
-    }
+    max-height: 200px;
   }
 }
 
