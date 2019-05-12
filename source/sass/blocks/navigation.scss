@@ -12,7 +12,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  transition: max-height 1s, padding 1s;
 
   &--open {
     max-height: 100vh;
