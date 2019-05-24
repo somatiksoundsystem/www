@@ -17,7 +17,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">f
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -46,21 +46,17 @@
 </header>
 <main class="main">
   <div class="main__container">
-    <ul class="artists">
-      <li class="artists__item">
-        <a href="artist.html" class="artists__link">
-          <img src="img/artists/dubsane.jpg" alt="" class="artists__img" width="1494" height="2160">
-        </a>
-        <h2 class="artists__title">Dubsane</h2>
-      </li>
-      <li class="artists__item">
-        <a href="artist.html" class="artists__link">
-          <img src="img/artists/default.png" alt="" class="artists__img" width="600" height="595">
-        </a>
-        <h2 class="artists__title">Smoker</h2>
-      </li>
-
-    </ul>
+    <div class="artist">
+      <article class="artist__info">
+        <img src="img/artists/dubsane.jpg" alt="" class="artist__img">
+        <div class="artist__social"></div>
+        <p class="artist__info"></p>
+      </article>
+      <div class="player"></div>
+      <div class="albums__carousel"></div>
+      <p class="artist__schedule"></p>
+      <div class="photos__carousel"></div>
+    </div>
   </div>
 </main>
 <script src="scripts/navigation.js"></script>
