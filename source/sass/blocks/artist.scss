@@ -1,0 +1,33 @@
+$transparent-background: rgba($color-black, 0.55);
+
+.artist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.artist__title {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: $transparent-background;
+  color: $color-white;
+}
+
+.artist__img {
+  width: 400px;
+  height: 600px;
+}
+
+.artist__info {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: $transparent-background;
+  color: $color-white;
+}
+
