@@ -2,11 +2,11 @@ $transparent-background: rgba($color-black, 0.55);
 
 .artist {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
   list-style: none;
 }
 
@@ -29,5 +29,9 @@ $transparent-background: rgba($color-black, 0.55);
   margin-bottom: 0;
   background-color: $transparent-background;
   color: $color-white;
+}
+
+.artist__albums {
+  margin-top: 40px;
 }
 
