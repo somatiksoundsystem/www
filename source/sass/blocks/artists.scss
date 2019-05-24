@@ -1,0 +1,35 @@
+$transparent-background: rgba($color-black, 0.55);
+
+.artists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.artists__item {
+  margin: 0 auto 20px;
+}
+
+.artists__title {
+  text-transform: capitalize;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 0;
+  background-color: $transparent-background;
+  color: $color-white;
+}
+
+.artists__img {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .artists {
+    justify-content: space-between;
+  }
+}
