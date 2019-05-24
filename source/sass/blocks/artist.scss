@@ -8,14 +8,15 @@ $transparent-background: rgba($color-black, 0.55);
   padding: 0;
   margin: 0 0 20px;
   list-style: none;
+
+  background-color: $transparent-background;
+  color: $color-white;
 }
 
 .artist__title {
   font-size: 16px;
   padding: 5px;
   margin-bottom: 0;
-  background-color: $transparent-background;
-  color: $color-white;
 }
 
 .artist__img {
@@ -23,12 +24,36 @@ $transparent-background: rgba($color-black, 0.55);
   height: 600px;
 }
 
+.artist__social {
+  display: flex;
+  justify-content: space-between;
+
+  width: 178px;
+
+  flex-flow: row nowrap;
+}
+
+.artist__social-link {
+  padding: 8px 14px;
+
+  border: {
+    width: medium;
+
+    color: $color-white-black;
+
+    radius: 90%;
+    style: solid;
+  }
+
+  svg {
+    fill: $color-white;
+  }
+}
+
 .artist__info {
   font-size: 16px;
   padding: 5px;
   margin-bottom: 0;
-  background-color: $transparent-background;
-  color: $color-white;
 }
 
 .artist__albums {
