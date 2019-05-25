@@ -2,7 +2,6 @@
 
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
-const del = require('del');
 
 const paths = {
   styles: {
@@ -80,16 +79,13 @@ gulp.task('server', () => {
   });
 
   gulp.watch('source/sass/**/*.scss', gulp.series('style'));
-  gulp.watch(paths.html.src, gulp.series('html')).
-      on('change', server.reload);
-  gulp.watch(paths.scripts.src, gulp.series('scripts')).
-      on('change', server.reload);
+  gulp.watch(paths.html.src, gulp.series('html')).on('change', server.reload);
+  gulp.watch(paths.scripts.src, gulp.series('scripts')).on('change', server.reload);
 });
 
 gulp.task('scripts', () => {
   // done();
-  return gulp.src(paths.scripts.src).
-    pipe(gulp.dest(paths.scripts.dest));
+  return gulp.src(paths.scripts.src).pipe(gulp.dest(paths.scripts.dest));
 });
 
 
@@ -152,16 +148,30 @@ gulp.task('resize', function () {
     .pipe(gulp.dest('dist'));
 });
 
+const del = require('del');
 gulp.task('clean', () => del(['build']));
 
 gulp.task('build', gulp.series('clean', 'copy'));
 
 gulp.task('start', gulp.series('build', 'server'));
 
-const ghPages = require('gh-pages');
 
+const branchName = require('branch-name');
+const ghPages = require('gh-pages');
 const deploy = (cb) => {
-  ghPages.publish('build', cb);
+  branchName.assumeMaster().then((name) => {
+    console.log(`Current branch: ${name}...`);
+    if (name.toLowerCase() === `master`) {
+      ghPages.publish('build', cb);
+    } else {
+      gulp.src('build/**/*')
+        .pipe(gulp.dest(`build/${name}/`))
+        .on('finish', () => {
+          del.sync(['build/**', '!build', `!build/${name}/**`]);
+          ghPages.publish('build', {add: true}, cb);
+        });
+    }
+  });
 };
 
 gulp.task('deploy', gulp.series('build', deploy, 'clean'));
