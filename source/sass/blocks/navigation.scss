@@ -11,9 +11,9 @@
   overflow: hidden;
   margin: 0;
   list-style: none;
-  padding: 0 0 10px;
 
-  &--open {
+  &--open,
+  &--nojs {
     max-height: 100vh;
     padding: 0;
   }
@@ -42,7 +42,7 @@
 
 .navigation__button {
   position: absolute;
-  top: 51px;
+  top: 56px;
   right: 30px;
   width: 40px;
   height: 3px;
@@ -81,6 +81,10 @@
       bottom: 0;
       transform: rotate(-45deg);
     }
+  }
+
+  &--nojs {
+    display: none;
   }
 }
 
