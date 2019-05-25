@@ -6,6 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
+    "branch-name": "1.0.0",
     "browser-sync": "^2.26.5",
     "css-mqpacker": "7.0.0",
     "del": "4.1.1",
