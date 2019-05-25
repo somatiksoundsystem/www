@@ -1,6 +1,6 @@
 .navigation {
   display: block;
-  padding-top: 10px;
+  padding: 10px 0 10px;
 }
 
 .navigation__list {
@@ -88,14 +88,14 @@
 @media screen and (min-width: $big-mobile-breakpoint) {
   .navigation__list {
     flex-direction: row;
-    max-height: 200px;
+    // max-height: 200px;
   }
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
   .navigation {
     padding-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .navigation__list {
