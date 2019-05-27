@@ -4,6 +4,7 @@
   "private": true,
   "description": "Somatik Web Portal",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "5.8.2",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
     "branch-name": "1.0.0",
