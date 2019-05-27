@@ -1,6 +1,6 @@
 .navigation {
   display: block;
-  padding-top: 10px;
+  padding: 10px 0 10px;
 }
 
 .navigation__list {
@@ -11,9 +11,9 @@
   overflow: hidden;
   margin: 0;
   list-style: none;
-  padding: 0 0 10px;
 
-  &--open {
+  &--open,
+  &--nojs {
     max-height: 100vh;
     padding: 0;
   }
@@ -42,7 +42,7 @@
 
 .navigation__button {
   position: absolute;
-  top: 51px;
+  top: 56px;
   right: 30px;
   width: 40px;
   height: 3px;
@@ -82,20 +82,23 @@
       transform: rotate(-45deg);
     }
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 
 @media screen and (min-width: $big-mobile-breakpoint) {
   .navigation__list {
     flex-direction: row;
-    max-height: 200px;
   }
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
   .navigation {
     padding-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .navigation__list {
