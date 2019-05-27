@@ -14,9 +14,9 @@ $transparent-background: rgba($color-black, 0.55);
 }
 
 .artist__title {
-  font-size: 16px;
-  padding: 5px;
-  margin-bottom: 0;
+  font-size: 34px;
+  padding: 10px;
+  margin: 0;
 }
 
 .artist__img {
@@ -25,6 +25,7 @@ $transparent-background: rgba($color-black, 0.55);
 }
 
 .artist__social {
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 
@@ -51,9 +52,9 @@ $transparent-background: rgba($color-black, 0.55);
 }
 
 .artist__info {
-  font-size: 16px;
-  padding: 5px;
-  margin-bottom: 0;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
 }
 
 .artist__albums {
