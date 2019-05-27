@@ -1,8 +1,13 @@
 'use strict';
 
 var navigation = document.querySelector('.navigation');
-var navigationButton = navigation.querySelector('.navigation__button');
 var menu = navigation.querySelector('.navigation__list');
+var navigationButton = navigation.querySelector('.navigation__button');
+
+if (navigation) {
+  menu.classList.remove('navigation__list--nojs');
+  navigationButton.classList.remove('navigation__button--nojs');
+}
 
 navigationButton.addEventListener('click', function (evt) {
   evt.preventDefault();
