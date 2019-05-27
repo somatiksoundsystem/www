@@ -1,5 +1,5 @@
 @mixin container {
-  padding: 0 20px;
+  padding: 0 10px;
 
   @media screen and (min-width: $tablet-breakpoint) {
     padding: 0 40px;

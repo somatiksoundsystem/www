@@ -1,6 +1,10 @@
 .main {
-  padding-top: 80px;
+  padding-top: 20px;
   position: relative;
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-top: 40px;
+  }
 }
 
 .main__container {
