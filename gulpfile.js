@@ -16,6 +16,15 @@ const paths = {
     src: 'source/favicon/*.*',
     dest: 'build/'
   },
+  icons: {
+    src: [
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/telegram.svg',
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/instagram.svg',
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/facebook.svg',
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/vk.svg'
+    ],
+    dest: 'build/icon/'
+  },
   images: {
     src: 'source/img/**/*',
     dest: 'build/img/'
@@ -99,8 +108,17 @@ gulp.task('favicon', () => {
     .pipe(gulp.dest(paths.favicon.dest));
 });
 
-const imagemin = require('gulp-imagemin');
+const svgo = require('gulp-svgo');
+const svgstore = require('gulp-svgstore');
+gulp.task('icons', () => {
+  return gulp.src(paths.icons.src)
+    .pipe(svgo())
+    .pipe(svgstore())
+    .pipe(rename('bundle.min.svg'))
+    .pipe(gulp.dest(paths.icons.dest));
+});
 
+const imagemin = require('gulp-imagemin');
 gulp.task('images', () => {
   return gulp.src(paths.images.src)
     .pipe(imagemin({
@@ -128,7 +146,7 @@ gulp.task('cname', () => {
 });
 
 
-gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'fonts', 'cname', 'favicon'));
+gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
 
 const imageResize = require('gulp-image-resize');
 
