@@ -1,0 +1,63 @@
+$transparent-background: rgba($color-black, 0.55);
+
+.artist {
+  @include clear-fix;
+
+  padding: 0;
+  margin: 0 0 20px;
+  list-style: none;
+
+  background-color: $transparent-background;
+  color: $color-white;
+}
+
+.artist__img {
+  float: left;
+
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+}
+
+.artist__title {
+  font-size: 34px;
+  padding: 10px;
+  margin: 0;
+}
+
+.artist__social {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+
+  flex-flow: row nowrap;
+}
+
+.artist__social-link {
+  padding: 12px 14px 8px;
+
+  border: {
+    width: medium;
+
+    color: $color-white-black;
+
+    radius: 90%;
+    style: solid;
+  }
+
+  svg {
+    fill: $color-white;
+  }
+}
+
+.artist__info {
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+.artist__albums {
+  margin-top: 40px;
+}

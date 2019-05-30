@@ -1,5 +1,5 @@
 @mixin container {
-  padding: 0 20px;
+  padding: 0 10px;
 
   @media screen and (min-width: $tablet-breakpoint) {
     padding: 0 40px;
@@ -12,5 +12,14 @@
   @media screen and (min-width: $big-desktop-breakpoint) {
     width: 1400px;
     margin: 0 auto;
+  }
+}
+
+@mixin clear-fix {
+  &::after {
+    display: table;
+    clear: both;
+
+    content: "";
   }
 }
