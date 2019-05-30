@@ -38,6 +38,12 @@
     background-color: $color-black;
     color: $color-white;
   }
+
+  &--active,
+  &--active:hover {
+    background: $color-white;
+    color: $color-black;
+  }
 }
 
 .navigation__button {
@@ -89,12 +95,6 @@
 }
 
 
-@media screen and (min-width: $big-mobile-breakpoint) {
-  .navigation__list {
-    flex-direction: row;
-  }
-}
-
 @media screen and (min-width: $tablet-breakpoint) {
   .navigation {
     padding-top: 20px;
@@ -103,6 +103,7 @@
 
   .navigation__list {
     max-height: 200px;
+    flex-direction: row;
   }
 
   .navigation__item {

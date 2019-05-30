@@ -12,10 +12,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  @media screen and (min-width: $big-mobile-breakpoint) {
-    flex-direction: row;
-  }
 }
 
 .header__logo {
@@ -39,6 +35,7 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .header__container {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 
   .header__logo {
