@@ -95,6 +95,12 @@
 }
 
 
+@media screen and (min-width: $mobile-breakpoint) {
+  .navigation__list {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: $tablet-breakpoint) {
   .navigation {
     padding-top: 20px;

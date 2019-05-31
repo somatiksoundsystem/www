@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media screen and (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+  }
 }
 
 .header__logo {
