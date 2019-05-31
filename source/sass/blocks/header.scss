@@ -13,7 +13,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  @media screen and (min-width: $big-mobile-breakpoint) {
+  @media screen and (min-width: $mobile-breakpoint) {
     flex-direction: row;
   }
 }

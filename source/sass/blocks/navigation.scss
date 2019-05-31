@@ -89,7 +89,7 @@
 }
 
 
-@media screen and (min-width: $big-mobile-breakpoint) {
+@media screen and (min-width: $mobile-breakpoint) {
   .navigation__list {
     flex-direction: row;
   }
