@@ -21,7 +21,8 @@ const paths = {
       'node_modules/@fortawesome/fontawesome-free/svgs/brands/telegram.svg',
       'node_modules/@fortawesome/fontawesome-free/svgs/brands/instagram.svg',
       'node_modules/@fortawesome/fontawesome-free/svgs/brands/facebook.svg',
-      'node_modules/@fortawesome/fontawesome-free/svgs/brands/vk.svg'
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/vk.svg',
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/soundcloud.svg',
     ],
     dest: 'build/icon/'
   },
