@@ -39,6 +39,7 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .header__container {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 
   .header__logo {

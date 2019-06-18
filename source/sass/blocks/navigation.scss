@@ -38,6 +38,12 @@
     background-color: $color-black;
     color: $color-white;
   }
+
+  &--active,
+  &--active:hover {
+    background: $color-white;
+    color: $color-black;
+  }
 }
 
 .navigation__button {
@@ -103,6 +109,7 @@
 
   .navigation__list {
     max-height: 200px;
+    flex-direction: row;
   }
 
   .navigation__item {

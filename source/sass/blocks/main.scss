@@ -1,12 +1,26 @@
 .main {
-  padding-top: 20px;
+  padding-top: 30px;
   position: relative;
-
-  @media screen and (min-width: $tablet-breakpoint) {
-    padding-top: 40px;
-  }
 }
 
 .main__container {
   @include container;
+}
+
+.main__title {
+  background: $color-black;
+  padding: 10px 20px;
+  color: $color-white;
+  text-align: center;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .main {
+    padding-top: 40px;
+  }
+
+  .main__title {
+    display: inline-block;
+    text-align-last: left;
+  }
 }

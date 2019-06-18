@@ -1,0 +1,94 @@
+.news {
+  padding: 10px;
+  margin: 0;
+}
+
+.news__item {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "Om WiFi 👁‍🗨";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3px 5px 1px;
+    background: $color-white;
+    color: $color-black;
+  }
+}
+
+.news__header {
+  position: relative;
+}
+
+.news__img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.news__date {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: -10px;
+  padding: 5px 10px;
+  background: $color-black;
+  color: $color-white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.news__title {
+  margin: 20px 0;
+
+  span {
+    background: $color-black;
+    color: $color-white;
+    padding: 2px;
+  }
+}
+
+.news__main {
+  line-height: 1.7;
+
+  span {
+    background: $color-black;
+    color: $color-white;
+    padding: 2px;
+  }
+}
+
+.news__links {
+  padding: 10px 30px;
+  background: $color-white;
+  color: $color-black;
+
+  a {
+    color: $color-black;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .news__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  .news__header {
+    width: 40%;
+  }
+
+  .news__main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
