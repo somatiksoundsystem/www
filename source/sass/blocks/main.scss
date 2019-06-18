@@ -7,13 +7,6 @@
   @include container;
 }
 
-.main__title {
-  background: $color-black;
-  padding: 10px 20px;
-  color: $color-white;
-  text-align: center;
-}
-
 @media screen and (min-width: $tablet-breakpoint) {
   .main {
     padding-top: 40px;
