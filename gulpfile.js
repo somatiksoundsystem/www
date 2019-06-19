@@ -103,7 +103,7 @@ gulp.task('scripts', () => {
 });
 
 
-const pug = require('gulp-pug');
+const pug = require('./plugin/gulp-pug');
 
 gulp.task('views', () => {
   return gulp.src(paths.pug.src)
