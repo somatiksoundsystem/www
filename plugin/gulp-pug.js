@@ -4,6 +4,14 @@ const through = require('through2');
 const pug = require('pug');
 const PluginError = require('plugin-error');
 const log = require('fancy-log');
+const fs = require('fs');
+const path = require('path');
+
+const dataDir = path.resolve(__dirname, './../data');
+const globals = {};
+for (const filename of fs.readdirSync(dataDir)) {
+  globals[path.basename(filename, '.json')] = require(`${dataDir}${path.sep}${filename}`);
+}
 
 module.exports = function gulpPug(options) {
   const opts = Object.assign({}, options);
@@ -11,7 +19,8 @@ module.exports = function gulpPug(options) {
   opts.data = Object.assign(opts.data || {}, opts.locals || {});
 
   return through.obj(function compilePug(file, enc, cb) {
-    const data = Object.assign({}, opts.data, file.data || {});
+
+    const data = Object.assign(globals, opts.data, file.data || {});
 
     opts.filename = file.path;
     file.extname = '.html';
