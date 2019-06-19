@@ -120,7 +120,7 @@ gulp.task('views', () => {
       verbose: true
     }))
     .pipe(rename((path) => {
-      path.basename = path.dirname === 'albums' ? 'index' : path.dirname;
+      path.basename = path.dirname === '.' ? 'index' : path.dirname;
       path.dirname = '';
     }))
     .pipe(gulp.dest(paths.pug.dest));
