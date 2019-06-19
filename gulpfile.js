@@ -12,6 +12,10 @@ const paths = {
     src: 'source/*.html',
     dest: 'build/'
   },
+  pug: {
+    src: 'source/views/**/index.pug',
+    dest: 'build/'
+  },
   favicon: {
     src: 'source/favicon/*.*',
     dest: 'build/'
@@ -99,6 +103,29 @@ gulp.task('scripts', () => {
 });
 
 
+const pug = require('gulp-pug');
+
+gulp.task('views', () => {
+  return gulp.src(paths.pug.src)
+    .pipe(pug({
+      locals: {
+        items: {
+          Albums: 'index.html',
+          Artists: 'artists.html',
+          News: 'news.html',
+          Shop: 'page-in-progress.html',
+          Contacts: 'page-in-progress.html'
+        }
+      },
+      verbose: true
+    }))
+    .pipe(rename((path) => {
+      path.basename = path.dirname === 'albums' ? 'index' : path.dirname;
+      path.dirname = '';
+    }))
+    .pipe(gulp.dest(paths.pug.dest));
+});
+
 gulp.task('html', () => {
   return gulp.src(paths.html.src)
     .pipe(gulp.dest(paths.html.dest));
@@ -147,7 +174,7 @@ gulp.task('cname', () => {
 });
 
 
-gulp.task('copy', gulp.parallel('html', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
+gulp.task('copy', gulp.parallel('views', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
 
 const imageResize = require('gulp-image-resize');
 
