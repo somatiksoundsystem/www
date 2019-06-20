@@ -1,8 +1,6 @@
 'use strict';
 
-const through = require('through2');
 const pug = require('pug');
-const PluginError = require('plugin-error');
 const log = require('fancy-log');
 const fs = require('fs');
 const path = require('path');
@@ -22,17 +20,16 @@ const artists = require(artistsJsonPath);
 
 let allAlbums = [];
 const albumNameSet = new Set();
-for (const [name, data] of Object.entries(artists)) {
+for (const [, data] of Object.entries(artists)) {
   allAlbums = allAlbums.concat(data.albums);
 }
 
 const albums = allAlbums.filter(({name}) => {
   const has = albumNameSet.has(name);
-  if (has) {
-    return false;
+  if (!has) {
+    albumNameSet.add(name);
   }
-  albumNameSet.add(name);
-  return true;
+  return !has;
 });
 
 const globals = {
@@ -45,7 +42,7 @@ const globals = {
   }
 };
 
-module.exports = async (outputPath) => {
+const writeAlbums = async (outputPath) => {
   const output = path.resolve(root, outputPath);
 
   await mkdir(output, {recursive: true});
@@ -57,3 +54,4 @@ module.exports = async (outputPath) => {
 
   return await writeFile(path.resolve(output, 'albums.html'), albumsHtml);
 };
+module.exports = writeAlbums;
