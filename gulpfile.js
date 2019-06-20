@@ -126,6 +126,12 @@ gulp.task('views', () => {
     .pipe(gulp.dest(paths.pug.dest));
 });
 
+const generator = require('./plugin/generator');
+
+gulp.task('data', () => {
+  return generator(paths.pug.dest);
+});
+
 gulp.task('html', () => {
   return gulp.src(paths.html.src)
     .pipe(gulp.dest(paths.html.dest));
@@ -174,7 +180,7 @@ gulp.task('cname', () => {
 });
 
 
-gulp.task('copy', gulp.parallel('views', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
+gulp.task('copy', gulp.parallel('data', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
 
 const imageResize = require('gulp-image-resize');
 
