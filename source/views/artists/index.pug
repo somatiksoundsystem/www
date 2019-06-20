@@ -1,0 +1,12 @@
+extends ../layout
+include ../mixins/header
+
+block header
+  +header('Albums')
+block main
+  ul.artists
+    each artist in artists
+      li.artists__item
+        a.artists__link(href=artist.href || 'page-in-progress.html')
+          img.artists__img(src=artist.photo alt=artist.name width='200' height='200')
+        h2.artists__title= artist.name
