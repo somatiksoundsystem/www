@@ -8,12 +8,8 @@ const paths = {
     src: 'source/sass/style.scss',
     dest: 'build/css/'
   },
-  html: {
-    src: 'source/*.html',
-    dest: 'build/'
-  },
   pug: {
-    src: 'source/views/**/index.pug',
+    src: 'source/views/**/*.pug',
     dest: 'build/'
   },
   favicon: {
@@ -93,49 +89,17 @@ gulp.task('server', () => {
   });
 
   gulp.watch('source/sass/**/*.scss', gulp.series('style'));
-  gulp.watch(paths.html.src, gulp.series('html')).on('change', server.reload);
+  gulp.watch(paths.pug.src, gulp.series('pug')).on('change', server.reload);
   gulp.watch(paths.scripts.src, gulp.series('scripts')).on('change', server.reload);
 });
 
 gulp.task('scripts', () => {
-  // done();
   return gulp.src(paths.scripts.src).pipe(gulp.dest(paths.scripts.dest));
 });
 
+const dataPugRender = require('./plugin/pug-data');
 
-const pug = require('./plugin/gulp-pug');
-
-gulp.task('views', () => {
-  return gulp.src(paths.pug.src)
-    .pipe(pug({
-      locals: {
-        items: {
-          Albums: 'index.html',
-          Artists: 'artists.html',
-          News: 'news.html',
-          Shop: 'page-in-progress.html',
-          Contacts: 'page-in-progress.html'
-        }
-      },
-      verbose: true
-    }))
-    .pipe(rename((path) => {
-      path.basename = path.dirname === '.' ? 'index' : path.dirname;
-      path.dirname = '';
-    }))
-    .pipe(gulp.dest(paths.pug.dest));
-});
-
-const generator = require('./plugin/generator');
-
-gulp.task('data', () => {
-  return generator(paths.pug.dest);
-});
-
-gulp.task('html', () => {
-  return gulp.src(paths.html.src)
-    .pipe(gulp.dest(paths.html.dest));
-});
+gulp.task('pug', () => dataPugRender(paths.pug.dest));
 
 gulp.task('favicon', () => {
   return gulp.src(paths.favicon.src)
@@ -180,7 +144,7 @@ gulp.task('cname', () => {
 });
 
 
-gulp.task('copy', gulp.parallel('data', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
+gulp.task('copy', gulp.parallel('pug', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
 
 const imageResize = require('gulp-image-resize');
 
