@@ -1,0 +1,21 @@
+extends ../layout
+include ../mixins/header
+
+block header
+  +header('News')
+block main
+  ul.news
+    each item in news
+      li.news__item
+        header.news__header
+          img(src=item.image alt=item.title width='500' height='500').news__img
+          span.news__date= item.date
+        div.news__main
+          if item.title
+            h2.news__title= item.title
+          p.news__text= item.text
+          if item.links && item.links.length > 0
+            p.news__links
+              each link in item.links
+                | !{link}
+                br
