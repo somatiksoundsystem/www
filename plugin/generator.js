@@ -24,9 +24,10 @@ const root = process.cwd();
 log(`Root: ${root}`);
 
 const dataDirPath = path.resolve(root, 'data');
-const artistsJsonPath = path.resolve(dataDirPath, 'artists.json');
+const ARTISTS_JSON_PATH = path.resolve(dataDirPath, 'artists.json');
+const NEWS_JSON_PATH = path.resolve(dataDirPath, 'news.json');
 
-const artists = require(artistsJsonPath);
+const artists = require(ARTISTS_JSON_PATH);
 
 const filterAlbums = () => {
   let allAlbums = [];
@@ -90,11 +91,20 @@ const writeArtists = async (output) => {
   return await writeFile(path.resolve(output, 'artists.html'), artistsHtml);
 };
 
+const news = require(NEWS_JSON_PATH);
+const writeNews = async (output) => {
+  const fn = pug.compileFile(path.resolve(root, 'source/views/news/index.pug'), {});
+  const html = fn(Object.assign(GLOBALS, {news}));
+
+  return await writeFile(path.resolve(output, 'news.html'), html);
+};
+
 module.exports = async (outputPath) => {
   outputPath = await createDirs(outputPath);
 
   const albumsPromise = writeAlbums(outputPath);
   const artistsPromise = writeArtists(outputPath);
+  const newsPromise = writeNews(outputPath);
 
-  return await Promise.all([albumsPromise, artistsPromise]);
+  return await Promise.all([albumsPromise, artistsPromise, newsPromise]);
 };

@@ -8,7 +8,8 @@ block main
     each item in news
       li.news__item
         header.news__header
-          img(src=item.image alt=item.title width='500' height='500').news__img
+          // TODO: add width and height
+          img(src=item.image alt=item.title).news__img
           span.news__date= item.date
         div.news__main
           if item.title
