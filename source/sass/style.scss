@@ -1,10 +1,13 @@
+// Setup
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
 @import "blocks/header.scss";
 @import "blocks/navigation.scss";
+@import "blocks/social-link.scss";
 @import "blocks/main";
+// Main blocks
 @import "blocks/albums.scss";
 @import "blocks/album.scss";
 @import "blocks/artists.scss";

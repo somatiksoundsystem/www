@@ -1,0 +1,16 @@
+.social-link {
+  padding: 12px 14px 8px;
+
+  border: {
+    width: medium;
+
+    color: $color-white-black;
+
+    radius: 90%;
+    style: solid;
+  }
+
+  svg {
+    fill: $color-white;
+  }
+}
