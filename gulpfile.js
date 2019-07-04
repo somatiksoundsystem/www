@@ -5,11 +5,16 @@ const plumber = require('gulp-plumber');
 
 const paths = {
   styles: {
-    src: 'source/sass/style.scss',
+    src: 'source/sass/**/*.scss',
+    main: 'source/sass/style.scss',
     dest: 'build/css/'
   },
   pug: {
     src: 'source/views/**/*.pug',
+    dest: 'build/'
+  },
+  templates: {
+    src: 'templates/**/*.html',
     dest: 'build/'
   },
   favicon: {
@@ -53,7 +58,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 
 gulp.task('style', () => {
-  return gulp.src(paths.styles.src)
+  return gulp.src(paths.styles.main)
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -77,22 +82,6 @@ gulp.task('style', () => {
 });
 
 
-const server = require('browser-sync').create();
-
-gulp.task('server', () => {
-  server.init({
-    server: 'build/',
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-
-  gulp.watch('source/sass/**/*.scss', gulp.series('style'));
-  gulp.watch(paths.pug.src, gulp.series('pug')).on('change', server.reload);
-  gulp.watch(paths.scripts.src, gulp.series('scripts')).on('change', server.reload);
-});
-
 gulp.task('scripts', () => {
   return gulp.src(paths.scripts.src).pipe(gulp.dest(paths.scripts.dest));
 });
@@ -100,6 +89,11 @@ gulp.task('scripts', () => {
 const dataPugRender = require('./plugin/pug-data');
 
 gulp.task('pug', () => dataPugRender(paths.pug.dest));
+
+gulp.task('templates', () => {
+  return gulp.src(paths.templates.src)
+    .pipe(gulp.dest(paths.templates.dest));
+});
 
 gulp.task('favicon', () => {
   return gulp.src(paths.favicon.src)
@@ -144,10 +138,16 @@ gulp.task('cname', () => {
 });
 
 
-gulp.task('copy', gulp.parallel('pug', 'scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
+gulp.task('static', gulp.parallel('scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
+
+
+gulp.task('copy', gulp.parallel('pug', 'static'));
+
+
+gulp.task('copy:templates', gulp.parallel('templates', 'static'));
+
 
 const imageResize = require('gulp-image-resize');
-
 gulp.task('resize', function () {
   return gulp.src('source/img/**/album_*.jpg')
     .pipe(imageResize({
@@ -164,12 +164,38 @@ gulp.task('resize', function () {
     .pipe(gulp.dest('dist'));
 });
 
+
 const del = require('del');
 gulp.task('clean', () => del(['build']));
 
 gulp.task('build', gulp.series('clean', 'copy'));
+gulp.task('build:templates', gulp.series('clean', 'copy:templates'));
 
-gulp.task('start', gulp.series('build', 'server'));
+
+const server = require('browser-sync').create();
+gulp.task('serve', () => {
+  server.init({
+    server: 'build/',
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch(paths.styles.src, gulp.series('style'));
+  gulp.watch(paths.scripts.src, gulp.series('scripts')).on('change', server.reload);
+  gulp.watch(paths.pug.src, gulp.series('pug')).on('change', server.reload);
+  gulp.watch(paths.templates.src, gulp.series('templates')).on('change', server.reload);
+});
+
+
+gulp.task('serve:build', gulp.series('build', 'serve'));
+
+
+gulp.task('serve:templates', gulp.series('build:templates', 'serve'));
+
+
+gulp.task('start', gulp.series('serve:build'));
 
 
 const branchName = require('branch-name');
@@ -189,5 +215,6 @@ const deploy = (cb) => {
     }
   });
 };
+
 
 gulp.task('deploy', gulp.series('build', deploy, 'clean'));
