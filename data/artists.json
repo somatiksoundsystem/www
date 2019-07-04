@@ -16,7 +16,11 @@
         "image": "/img/albums/album_thumb_escape.jpg",
         "author": "Dubsane",
         "name": "Escape",
-        "date": "01.01.2018"
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        }
       },
       {
         "image": "/img/albums/album_thumb_escape.jpg",
