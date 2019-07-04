@@ -1,0 +1,27 @@
+extends ../layout
+include ../mixins/header
+include ../mixins/social
+
+block header
+  +header('Albums')
+block main
+  .artist
+    h1.artist__nickname= artist.nickname
+    img.artist__img(src=artist.photo, alt='', width='1494', height='2160')
+    .artist__social
+      each url, type in artist.social
+        +social(type, url)
+    h1.artist__name= artist.name
+    p.artist__info= artist.info
+  .player
+    iframe(width='100%', height='166', scrolling='no', frameborder='no', allow='autoplay', src=`https://w.soundcloud.com/player/?url=${artist.url}&color=%23111413&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false`)
+  .artist__albums
+    ul.albums
+      each album in artist.albums
+        li.albums__item
+          a.albums__link(href=album.href || '/page-in-progress.html')
+            img.albums__img(src=album.image alt=album.name width='200' height='200')
+          h3.albums__author= album.author
+          h2.albums__title= album.name
+  p.artist__schedule
+  .photos__carousel

@@ -1,0 +1,96 @@
+{
+  "Dubsane": {
+    "nickname": "Dubsane",
+    "photo": "/img/artists/dubsane.jpg",
+    "name": "Александр Паластров",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A//api.soundcloud.com/tracks/614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "albums": [
+      {
+        "image": "/img/album_thumb_escape.jpg",
+        "author": "Dubsane",
+        "name": "Escape",
+        "date": "01.01.2018"
+      },
+      {
+        "image": "/img/album_thumb_escape.jpg",
+        "author": "Dubsane",
+        "name": "Girls",
+        "date": "01.01.2019"
+      }
+    ]
+  },
+  "Aedem": {
+    "nickname": "Aedem",
+    "photo": "/img/artists/default.png",
+    "name": "Аедем Аедемович",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A//api.soundcloud.com/tracks/614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "fb": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "albums": [
+      {
+        "name": "Neverendingstory",
+        "image": "/img/album_thumb_neverending-story.jpg",
+        "author": "Perforated cerebral party",
+        "href": "page-in-progress.html"
+      },
+      {
+        "image": "/img/album_thumb_eat-my-face.jpg",
+        "author": "Aedem",
+        "name": "Eat my face"
+      },
+      {
+        "image": "/img/album_thumb_escape.jpg",
+        "author": "Dubsane",
+        "name": "Escape"
+      },
+      {
+        "image": "/img/album_thumb_hidden-by-the-leaves.jpg",
+        "author": "Primary substance",
+        "name": "Hidden by the leaves"
+      },
+      {
+        "image": "/img/album_thumb_luna.jpg",
+        "author": "NPLM",
+        "name": "Luna"
+      },
+      {
+        "image": "/img/album_thumb_mashapov.jpg",
+        "author": "Kashapov",
+        "name": "Mashapov"
+      },
+      {
+        "image": "/img/album_thumb_raver-baby.jpg",
+        "author": "Aedem",
+        "name": "Raver baby"
+      },
+      {
+        "image": "/img/album_thumb_dissocination.jpg",
+        "author": "Doqta",
+        "name": "Dissocination"
+      },
+      {
+        "image": "/img/album_thumb_dlya-orgij-i-horovodov.jpg",
+        "author": "LemXBro",
+        "name": "Для Оргий И Хороводов"
+      },
+      {
+        "image": "/img/album_thumb_pcp-remixes.jpg",
+        "author": "Perforated cerebral party",
+        "name": "Remixes"
+      }
+    ]
+  }
+
+}

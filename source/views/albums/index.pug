@@ -1,0 +1,13 @@
+extends ../layout
+include ../mixins/header
+
+block header
+  +header('Albums')
+block main
+  ul.albums
+    each album in albums
+      li.albums__item
+        a.albums__link(href=album.href || 'page-in-progress.html')
+          img.albums__img(src=album.image alt=album.name width='200' height='200')
+        h3.albums__author= album.author
+        h2.albums__title= album.name

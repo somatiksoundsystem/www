@@ -1,0 +1,16 @@
+mixin header(current)
+  header.header
+    .header__container
+      .header__logo
+        a(href='/')
+          img.header__img(src='/img/logo_somatik.jpg' alt='Somatik Logo' width='400' height='400')
+        img.header__img(src='/img/logo_omwifi_animated.gif' alt='OmWiFi' width='100' height='100')
+      nav.navigation
+        ul.navigation__list.navigation__list--nojs
+          each href, name in items
+            if name !== current
+              li.navigation__item
+                a.navigation__link(href=href)= name
+        button.navigation__button.navigation__button--nojs Navigation button
+append scripts
+  script(src='/scripts/navigation.js')
