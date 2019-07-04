@@ -8,10 +8,11 @@ block main
   .album
     h1.album__name=album.name
     img.album__img(src=album.image alt=album.name width='400' height='400')
-    .album__social
-      .artist__social
-        each url, type in album.social
-          +social(type, url)
+    if album.social
+      .album__social
+        .artist__social
+          each url, type in album.social
+            +social(type, url)
     h2.album__author=album.author
     h2.album__release-date Release date: #{album.date}
   .player

@@ -55,7 +55,26 @@ async function createDirs(...paths) {
   return output;
 }
 
+const writeAlbum = async (outputPath, name, album) => {
+
+  const fn = pug.compileFile(path.resolve(root, 'source/views/albums/album.pug'), {});
+  const html = fn(Object.assign(GLOBALS, {album}));
+
+  const output = await createDirs(outputPath, 'album');
+
+  await writeFile(path.resolve(output, `${name}.html`), html);
+
+  album.href = `album/${name}.html`;
+};
+
 const writeAlbums = async (output) => {
+
+  const promises = [];
+  for (const album of albums) {
+    promises.push(writeAlbum(output, album.name, album));
+  }
+
+  await Promise.all(promises);
 
   const fn = pug.compileFile(path.resolve(root, 'source/views/albums/index.pug'), {});
   const albumsHtml = fn(Object.assign(GLOBALS, {albums}));

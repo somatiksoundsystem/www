@@ -20,7 +20,8 @@
         "social": {
           "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
-        }
+        },
+        "url": "https%3A//api.soundcloud.com/playlists/506033388&color=%23131416"
       },
       {
         "image": "/img/albums/album_thumb_escape.jpg",
