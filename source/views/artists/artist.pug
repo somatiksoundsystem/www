@@ -7,7 +7,7 @@ block header
 block main
   .artist
     h1.artist__nickname= artist.nickname
-    img.artist__img(src=artist.photo, alt='', width='1494', height='2160')
+    img.artist__img(src=artist.photo, alt=artist.nickname, width='1494', height='2160')
     .artist__social
       each url, type in artist.social
         +social(type, url)
