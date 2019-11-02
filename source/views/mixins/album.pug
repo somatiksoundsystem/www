@@ -1,0 +1,7 @@
+mixin album(album)
+  li.albums__item
+    a.albums__link(href=album.href || 'page-in-progress.html')
+      img.albums__img(src=album.image alt=album.name width='300' height='300')
+      h3.albums__author= album.authors.map((it) => it.nickname).join(', ')
+      h2.albums__title= album.name
+
