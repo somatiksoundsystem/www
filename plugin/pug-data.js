@@ -29,6 +29,7 @@ const NEWS_JSON_PATH = path.resolve(dataDirPath, 'news.json');
 
 const artists = require(ARTISTS_JSON_PATH);
 
+// TODO: check json consistency
 const filterAlbums = () => {
   let allAlbums = [];
   const albumNameSet = new Set();
@@ -55,23 +56,21 @@ async function createDirs(...paths) {
   return output;
 }
 
-const writeAlbum = async (outputPath, name, album) => {
+const writeAlbum = async (outputPath, album) => {
 
   const fn = pug.compileFile(path.resolve(root, 'source/views/albums/album.pug'), {});
   const html = fn(Object.assign(GLOBALS, {album}));
 
   const output = await createDirs(outputPath, 'album');
 
-  await writeFile(path.resolve(output, `${name}.html`), html);
-
-  album.href = `album/${name}.html`;
+  await writeFile(path.resolve(output, `${album.id}.html`), html);
 };
 
 const writeAlbums = async (output) => {
 
   const promises = [];
   for (const album of albums) {
-    promises.push(writeAlbum(output, album.name, album));
+    promises.push(writeAlbum(output, album));
   }
 
   await Promise.all(promises);
@@ -84,22 +83,20 @@ const writeAlbums = async (output) => {
   return await writeFile(path.resolve(output, 'albums.html'), albumsHtml);
 };
 
-const writeArtist = async (outputPath, name, artist) => {
+const writeArtist = async (outputPath, artist) => {
 
   const fn = pug.compileFile(path.resolve(root, 'source/views/artists/artist.pug'), {});
   const html = fn(Object.assign(GLOBALS, {artist}));
 
   const output = await createDirs(outputPath, 'artist');
 
-  await writeFile(path.resolve(output, `${name}.html`), html);
-
-  artist.href = `artist/${name}.html`;
+  await writeFile(path.resolve(output, `${artist.id}.html`), html);
 };
 
 const writeArtists = async (output) => {
   const promises = [];
-  for (const [name, artist] of Object.entries(artists)) {
-    promises.push(writeArtist(output, name, artist));
+  for (const [_, artist] of Object.entries(artists)) {
+    promises.push(writeArtist(output, artist));
   }
 
   await Promise.all(promises);
