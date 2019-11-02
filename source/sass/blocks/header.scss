@@ -22,11 +22,14 @@
   position: relative;
   z-index: 1;
   top: 18px;
-  margin-right: 75px;
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+
+  @media screen and (min-width: $mid-desktop-breakpoint) {
+    margin-right: 75px;
+  }
 }
 
 .header__img {
