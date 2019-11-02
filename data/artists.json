@@ -1,101 +1,543 @@
 {
-  "Dubsane": {
+  "dubsane": {
     "nickname": "Dubsane",
     "photo": "/img/artists/dubsane.jpg",
-    "name": "Александр Паластров",
+    "name": "Alex Palastrov",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
-    "url": "https%3A//api.soundcloud.com/tracks/614559213",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
     "social": {
       "instagram": "https://instagram.com/dubsane",
       "vk": "https://vk.com/dubsane",
       "facebook": "https://fb.com/dubsane",
       "soundcloud": "https://soundcloud.com/altabdubsane"
     },
+    "id": "dubsane",
+    "href": "/artist/dubsane",
     "albums": [
       {
         "image": "/img/albums/album_thumb_escape.jpg",
-        "author": "Dubsane",
         "name": "Escape",
         "date": "01.01.2018",
         "social": {
           "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
-        "url": "https%3A//api.soundcloud.com/playlists/506033388&color=%23131416"
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "dubsane"
+        ],
+        "id": "escape",
+        "href": "/album/escape"
       },
       {
         "image": "/img/albums/album_thumb_escape.jpg",
-        "author": "Dubsane",
         "name": "Girls",
-        "date": "01.01.2019"
+        "date": "01.01.2019",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "dubsane"
+        ],
+        "id": "girls",
+        "href": "/album/girls"
       }
     ]
   },
-  "Aedem": {
-    "nickname": "Aedem",
+  "lem": {
     "photo": "/img/artists/default.png",
-    "name": "Аедем Аедемович",
+    "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
-    "url": "https%3A//api.soundcloud.com/tracks/614559213",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
     "social": {
       "instagram": "https://instagram.com/dubsane",
       "vk": "https://vk.com/dubsane",
-      "fb": "https://fb.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
       "soundcloud": "https://soundcloud.com/altabdubsane"
     },
+    "id": "lem",
+    "nickname": "Lem",
+    "href": "/artist/lem",
     "albums": [
       {
-        "name": "Neverendingstory",
-        "image": "/img/albums/album_thumb_neverending-story.jpg",
-        "author": "Perforated cerebral party",
-        "href": "page-in-progress.html"
-      },
-      {
-        "image": "/img/albums/album_thumb_eat-my-face.jpg",
-        "author": "Aedem",
-        "name": "Eat my face"
-      },
-      {
-        "image": "/img/albums/album_thumb_escape.jpg",
-        "author": "Dubsane",
-        "name": "Escape"
-      },
-      {
-        "image": "/img/albums/album_thumb_hidden-by-the-leaves.jpg",
-        "author": "Primary substance",
-        "name": "Hidden by the leaves"
-      },
-      {
-        "image": "/img/albums/album_thumb_luna.jpg",
-        "author": "NPLM",
-        "name": "Luna"
-      },
-      {
-        "image": "/img/albums/album_thumb_mashapov.jpg",
-        "author": "Kashapov",
-        "name": "Mashapov"
-      },
-      {
-        "image": "/img/albums/album_thumb_raver-baby.jpg",
-        "author": "Aedem",
-        "name": "Raver baby"
-      },
-      {
-        "image": "/img/albums/album_thumb_dissocination.jpg",
-        "author": "Doqta",
-        "name": "Dissocination"
-      },
-      {
         "image": "/img/albums/album_thumb_dlya-orgij-i-horovodov.jpg",
-        "author": "LemXBro",
-        "name": "Для Оргий И Хороводов"
+        "name": "Для Оргий И Хороводов",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "lem"
+        ],
+        "id": "dlya_orgii_i_horovodov",
+        "href": "/album/dlya_orgii_i_horovodov"
+      }
+    ]
+  },
+  "dronum": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "dronum",
+    "nickname": "Dronum",
+    "href": "/artist/dronum",
+    "albums": []
+  },
+  "vova_pcp": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "vova_pcp",
+    "nickname": "Vova PCP",
+    "href": "/artist/vova_pcp",
+    "albums": [
+      {
+        "image": "/img/albums/album_thumb_neverending-story.jpg",
+        "name": "Neverendingstory",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "vova_pcp"
+        ],
+        "id": "neverendingstory",
+        "href": "/album/neverendingstory"
       },
       {
         "image": "/img/albums/album_thumb_pcp-remixes.jpg",
-        "author": "Perforated cerebral party",
-        "name": "Remixes"
+        "name": "Remixes",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "vova_pcp"
+        ],
+        "id": "remixes",
+        "href": "/album/remixes"
       }
     ]
+  },
+  "tsaritsa_logiki": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "tsaritsa_logiki",
+    "nickname": "Tsaritsa Logiki",
+    "href": "/artist/tsaritsa_logiki",
+    "albums": []
+  },
+  "alex_cool": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "alex_cool",
+    "nickname": "Alex Cool",
+    "href": "/artist/alex_cool",
+    "albums": []
+  },
+  "office_passenger": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "office_passenger",
+    "nickname": "Office Passenger",
+    "href": "/artist/office_passenger",
+    "albums": []
+  },
+  "primary_substance": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "primary_substance",
+    "nickname": "Primary Substance",
+    "href": "/artist/primary_substance",
+    "albums": [
+      {
+        "image": "/img/albums/album_thumb_hidden-by-the-leaves.jpg",
+        "name": "Hidden by the leaves",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "primary_substance"
+        ],
+        "id": "hidden_by_the_leaves",
+        "href": "/album/hidden_by_the_leaves"
+      }
+    ]
+  },
+  "kinestetic": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "kinestetic",
+    "nickname": "Kinestetic",
+    "href": "/artist/kinestetic",
+    "albums": []
+  },
+  "doqta": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "doqta",
+    "nickname": "Doqta",
+    "href": "/artist/doqta",
+    "albums": [
+      {
+        "image": "/img/albums/album_thumb_dissocination.jpg",
+        "name": "Dissocination",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "doqta"
+        ],
+        "id": "dissocination",
+        "href": "/album/dissocination"
+      }
+    ]
+  },
+  "nplm": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "nplm",
+    "nickname": "NPLM",
+    "href": "/artist/nplm",
+    "albums": [
+      {
+        "image": "/img/albums/album_thumb_luna.jpg",
+        "name": "Luna",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "nplm"
+        ],
+        "id": "luna",
+        "href": "/album/luna"
+      }
+    ]
+  },
+  "u3niko": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "u3niko",
+    "nickname": "U3niko",
+    "href": "/artist/u3niko",
+    "albums": []
+  },
+  "kashapov": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "kashapov",
+    "nickname": "Kashapov",
+    "href": "/artist/kashapov",
+    "albums": [
+      {
+        "image": "/img/albums/album_thumb_mashapov.jpg",
+        "name": "Mashapov",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "kashapov"
+        ],
+        "id": "mashapov",
+        "href": "/album/mashapov"
+      }
+    ]
+  },
+  "kansai": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "kansai",
+    "nickname": "Kansai",
+    "href": "/artist/kansai",
+    "albums": []
+  },
+  "arthur_tourenism": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "arthur_tourenism",
+    "nickname": "Arthur Tourenism",
+    "href": "/artist/arthur_tourenism",
+    "albums": []
+  },
+  "bees_and_cobras": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "bees_and_cobras",
+    "nickname": "Bees And Cobras",
+    "href": "/artist/bees_and_cobras",
+    "albums": []
+  },
+  "aedem": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "aedem",
+    "nickname": "Aedem",
+    "href": "/artist/aedem",
+    "albums": [
+      {
+        "image": "/img/albums/album_thumb_eat-my-face.jpg",
+        "name": "Eat my face",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "aedem"
+        ],
+        "id": "eat_my_face",
+        "href": "/album/eat_my_face"
+      },
+      {
+        "image": "/img/albums/album_thumb_raver-baby.jpg",
+        "name": "Raver baby",
+        "date": "01.01.2018",
+        "social": {
+          "vk": "https://vk.com/music?z=audio_playlist16058189_73062618",
+          "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
+        },
+        "url": "https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F506033388",
+        "authors": [
+          "aedem"
+        ],
+        "id": "raver_baby",
+        "href": "/album/raver_baby"
+      }
+    ]
+  },
+  "icd": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "icd",
+    "nickname": "ICD",
+    "href": "/artist/icd",
+    "albums": []
+  },
+  "cylriel": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "cylriel",
+    "nickname": "Cylriel",
+    "href": "/artist/cylriel",
+    "albums": []
+  },
+  "dj-s": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "dj-s",
+    "nickname": "Dj's",
+    "href": "/artist/dj-s",
+    "albums": []
+  },
+  "dopesmoker": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "dopesmoker",
+    "nickname": "Dopesmoker",
+    "href": "/artist/dopesmoker",
+    "albums": []
+  },
+  "petr_nikitin": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "petr_nikitin",
+    "nickname": "Petr Nikitin",
+    "href": "/artist/petr_nikitin",
+    "albums": []
+  },
+  "costas_alexas": {
+    "photo": "/img/artists/default.png",
+    "name": "Ivanov Ivan Invanovich",
+    "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
+    "url": "https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F614559213",
+    "social": {
+      "instagram": "https://instagram.com/dubsane",
+      "vk": "https://vk.com/dubsane",
+      "facebook": "https://fb.com/dubsane",
+      "soundcloud": "https://soundcloud.com/altabdubsane"
+    },
+    "id": "costas_alexas",
+    "nickname": "Costas Alexas",
+    "href": "/artist/costas_alexas",
+    "albums": []
   }
-
 }
