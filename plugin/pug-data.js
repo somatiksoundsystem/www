@@ -60,7 +60,7 @@ const writeAlbum = async (outputPath, album) => {
 
   const output = await createDirs(outputPath, 'album');
 
-  await writeFile(path.resolve(output, `${album.id}.html`), html);
+  return writeFile(path.resolve(output, `${album.id}.html`), html);
 };
 
 const writeAlbums = async (output) => {
@@ -70,14 +70,12 @@ const writeAlbums = async (output) => {
     promises.push(writeAlbum(output, album));
   }
 
-  await Promise.all(promises);
-
   const fn = pug.compileFile(path.resolve(root, 'source/views/albums/index.pug'), {});
   const albumsHtml = fn(Object.assign(GLOBALS, {albums}));
 
-  await writeFile(path.resolve(output, 'index.html'), albumsHtml);
-
-  return await writeFile(path.resolve(output, 'albums.html'), albumsHtml);
+  promises.push(writeFile(path.resolve(output, 'index.html'), albumsHtml));
+  promises.push(writeFile(path.resolve(output, 'albums.html'), albumsHtml));
+  return Promise.all(promises);
 };
 
 const writeArtist = async (outputPath, artist) => {
@@ -87,21 +85,20 @@ const writeArtist = async (outputPath, artist) => {
 
   const output = await createDirs(outputPath, 'artist');
 
-  await writeFile(path.resolve(output, `${artist.id}.html`), html);
+  return writeFile(path.resolve(output, `${artist.id}.html`), html);
 };
 
 const writeArtists = async (output) => {
   const promises = [];
-  for (const [_, artist] of Object.entries(artists)) {
+  for (const [, artist] of Object.entries(artists)) {
     promises.push(writeArtist(output, artist));
   }
-
-  await Promise.all(promises);
 
   const fn = pug.compileFile(path.resolve(root, 'source/views/artists/index.pug'), {});
   const artistsHtml = fn(Object.assign(GLOBALS, {artists: Object.values(artists)}));
 
-  return await writeFile(path.resolve(output, 'artists.html'), artistsHtml);
+  promises.push(writeFile(path.resolve(output, 'artists.html'), artistsHtml));
+  return Promise.all(promises);
 };
 
 const news = require(NEWS_JSON_PATH);
@@ -109,7 +106,7 @@ const writeNews = async (output) => {
   const fn = pug.compileFile(path.resolve(root, 'source/views/news/index.pug'), {});
   const html = fn(Object.assign(GLOBALS, {news}));
 
-  return await writeFile(path.resolve(output, 'news.html'), html);
+  return writeFile(path.resolve(output, 'news.html'), html);
 };
 
 module.exports = async (outputPath) => {
@@ -119,5 +116,5 @@ module.exports = async (outputPath) => {
   const artistsPromise = writeArtists(outputPath);
   const newsPromise = writeNews(outputPath);
 
-  return await Promise.all([albumsPromise, artistsPromise, newsPromise]);
+  return Promise.all([albumsPromise, artistsPromise, newsPromise]);
 };
