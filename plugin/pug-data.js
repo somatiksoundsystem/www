@@ -32,18 +32,15 @@ const artists = require(ARTISTS_JSON_PATH);
 // TODO: check json consistency
 const filterAlbums = () => {
   let allAlbums = [];
-  const albumNameSet = new Set();
   for (const [, data] of Object.entries(artists)) {
     allAlbums = allAlbums.concat(data.albums);
   }
 
-  return allAlbums.filter(({name}) => {
-    const has = albumNameSet.has(name);
-    if (!has) {
-      albumNameSet.add(name);
-    }
-    return !has;
+  allAlbums.forEach((album) => {
+    album.authors = album.authors.map((id) => artists[id]);
   });
+
+  return allAlbums;
 };
 
 const albums = filterAlbums();
