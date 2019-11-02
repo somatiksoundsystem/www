@@ -151,8 +151,8 @@ const imageResize = require('gulp-image-resize');
 gulp.task('resize', function () {
   return gulp.src('source/img/**/album_*.jpg')
     .pipe(imageResize({
-      width: 200,
-      height: 200,
+      width: 300,
+      height: 300,
       crop: false,
       upscale: false,
       interlace: true
