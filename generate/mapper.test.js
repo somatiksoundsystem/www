@@ -17,6 +17,9 @@ assert.equal(map(`name and name`), `name_and_name`);
 assert.equal(map(`UPPER_CASE`), `upper_case`);
 assert.equal(map(`SomeOtherCase`), `someothercase`);
 
+// Test special chars
+assert.equal(map(`dj's`), `dj-s`);
+
 // Test cyrillic
 assert.equal(map(`русский`), `russkii`);
 assert.equal(map(`Для застолья`), `dlya_zastolya`);

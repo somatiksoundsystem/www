@@ -42,7 +42,7 @@ const escapeWith = (char) => (acc, it) => {
   return acc;
 };
 const UNSAFE_CHARS = Array.from(` <>[]{}|\\^%!.`).reduce(escapeWith(`_`), {});
-const RESERVED_CHARS = Array.from(`$&+,/;:=?@#`).reduce(escapeWith(`-`), {});
+const RESERVED_CHARS = Array.from(`$&+,/;:=?@#'`).reduce(escapeWith(`-`), {});
 
 const MAPPINGS = {...UNSAFE_CHARS, ...RESERVED_CHARS, ...RUSSIAN_CHARS};
 
