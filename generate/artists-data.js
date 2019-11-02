@@ -75,7 +75,6 @@ const ARTISTS = [
   AEDEM,
   newArtist(`ICD`),
   newArtist(`Cylriel`),
-  newArtist(`Dj's`),
   newArtist(`Dopesmoker`),
   newArtist(`Petr Nikitin`),
   newArtist(`Costas Alexas`),
