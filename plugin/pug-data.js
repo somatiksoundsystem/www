@@ -8,11 +8,11 @@ const util = require('util');
 
 const GLOBALS = {
   items: {
-    Albums: '/index.html',
-    Artists: '/artists.html',
-    News: '/news.html',
-    Shop: '/page-in-progress.html',
-    Contacts: '/page-in-progress.html'
+    Albums: '/',
+    Artists: '/artists',
+    News: '/news',
+    Shop: '/page-in-progress',
+    Contacts: '/page-in-progress'
   }
 };
 

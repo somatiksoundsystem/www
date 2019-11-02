@@ -3,7 +3,7 @@ include ../mixins/header
 include ../mixins/social
 
 block header
-  +header('Albums')
+  +header(`Artist: ${artist.nickname}`)
 block main
   .artist
     h1.artist__nickname= artist.nickname

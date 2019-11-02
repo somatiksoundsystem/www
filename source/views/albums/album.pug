@@ -3,7 +3,7 @@ include ../mixins/header
 include ../mixins/social
 
 block header
-  +header('Albums')
+  +header(`Album: ${album.name}`)
 block main
   .album
     h1.album__name=album.name
