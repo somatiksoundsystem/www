@@ -175,7 +175,12 @@ gulp.task('build:templates', gulp.series('clean', 'copy:templates'));
 const server = require('browser-sync').create();
 gulp.task('serve', () => {
   server.init({
-    server: 'build/',
+    server: {
+      baseDir: 'build/',
+      serveStaticOptions: {
+        extensions: ['html']
+      }
+    },
     notify: false,
     open: true,
     cors: true,
