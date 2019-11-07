@@ -10,7 +10,7 @@ const DEFAULT_ARTIST_INFO = {
   photo: `/img/artists/default.png`,
   name: `Ivanov Ivan Invanovich`,
   info: `Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.`,
-  url: encodeURIComponent(`https://api.soundcloud.com/tracks/614559213`),
+  url: `https://api.soundcloud.com/tracks/614559213`,
   social: {
     instagram: `https://instagram.com/dubsane`,
     vk: `https://vk.com/dubsane`,
@@ -38,7 +38,7 @@ const DUBSANE = newArtist(`Dubsane`, {
   photo: `/img/artists/dubsane.jpg`,
   name: `Alex Palastrov`,
   info: `Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.`,
-  url: encodeURIComponent(`https://api.soundcloud.com/tracks/614559213`),
+  url: `https://api.soundcloud.com/tracks/614559213`,
   social: {
     instagram: `https://instagram.com/dubsane`,
     vk: `https://vk.com/dubsane`,
@@ -90,7 +90,7 @@ const ALBUMS = [
       vk: `https://vk.com/music?z=audio_playlist16058189_73062618`,
       soundcloud: `https://soundcloud.com/altabdubsane/sets/dubsane-escape`
     },
-    url: encodeURIComponent(`https://api.soundcloud.com/playlists/506033388`)
+    url: `https://api.soundcloud.com/playlists/506033388`
   },
   {
     image: `/img/albums/album_thumb_escape.jpg`,
@@ -153,7 +153,7 @@ const DEFAULT_ALBUM_INFO = {
     vk: `https://vk.com/music?z=audio_playlist16058189_73062618`,
     soundcloud: `https://soundcloud.com/altabdubsane/sets/dubsane-escape`
   },
-  url: encodeURIComponent(`https://api.soundcloud.com/playlists/506033388`)
+  url: `https://api.soundcloud.com/playlists/506033388`
 };
 
 const checkUniqueAlbum = checkUnique(
