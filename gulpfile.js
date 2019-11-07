@@ -188,9 +188,13 @@ gulp.task('serve', () => {
   });
 
   gulp.watch(paths.styles.src, gulp.series('style'));
-  gulp.watch(paths.scripts.src, gulp.series('scripts')).on('change', server.reload);
-  gulp.watch(paths.pug.src, gulp.series('pug')).on('change', server.reload);
-  gulp.watch(paths.templates.src, gulp.series('templates')).on('change', server.reload);
+  const reload = (cb) => {
+    server.reload();
+    cb();
+  };
+  gulp.watch(paths.scripts.src, gulp.series('scripts', reload));
+  gulp.watch(paths.pug.src, gulp.series('pug', reload));
+  gulp.watch(paths.templates.src, gulp.series('templates', reload));
 });
 
 
