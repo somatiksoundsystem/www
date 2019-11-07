@@ -1,6 +1,7 @@
 extends ../layout
 include ../mixins/header
 include ../mixins/social
+include ../mixins/player
 
 block header
   +header(`Album: ${album.name}`)
@@ -18,5 +19,4 @@ block main
         a.albums__link(href=author.href)
           =author.nickname
     h2.album__release-date Release date: #{album.date}
-  .player
-    iframe(width='100%' height='450' scrolling='no' frameborder='no' allow='autoplay' src=`https://w.soundcloud.com/player/?url=${album.url}&color=%23131416&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false`)
+  +player(album.url, '100%', 450)

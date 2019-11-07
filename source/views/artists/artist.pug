@@ -2,6 +2,7 @@ extends ../layout
 include ../mixins/header
 include ../mixins/album
 include ../mixins/social
+include ../mixins/player
 
 block header
   +header(`Artist: ${artist.nickname}`)
@@ -14,8 +15,7 @@ block main
         +social(type, url)
     h1.artist__name= artist.name
     p.artist__info= artist.info
-  .player
-    iframe(width='100%', height='166', scrolling='no', frameborder='no', allow='autoplay', src=`https://w.soundcloud.com/player/?url=${artist.url}&color=%23111413&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false`)
+  +player(album.url, '100%', 166)
   .artist__albums
     ul.albums
       each album in artist.albums

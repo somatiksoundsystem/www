@@ -1,0 +1,4 @@
+mixin player(url, width, height)
+  .player
+    iframe(width=width height=height scrolling='no' frameborder='no' allow='autoplay' src=`https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}&color=%23131416&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false`)
+
