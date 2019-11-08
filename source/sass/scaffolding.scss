@@ -53,6 +53,16 @@ body::before {
   border: 0;
 }
 
+a,
+a:link:visited:active {
+  text-decoration: none;
+  color: $color-white-black;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
 h1,
 h2,
 h3,
