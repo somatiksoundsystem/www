@@ -48,15 +48,61 @@ const DUBSANE = newArtist(`Dubsane`, {
 });
 
 const PCP = newArtist(`Vova PCP`);
-const AEDEM = newArtist(`Aedem`);
-const PRIMARY_SUBSTANCE = newArtist(`Primary Substance`);
+const AEDEM = newArtist(`Aedem`, {
+  photo: `/img/artists/default.png`,
+  name: `Константин Терентьев`,
+  info: `Электронный музыкант из Санкт-Петербурга. Автор трех альбомов, выпущенных на Microcosmos Records. С 2016 года резидент Somatik Sound System, где выпустил несколько релизов, под которые любители самых разных жанров электроники успешно двигают телами в ритме 90 bpm. Музыка Aedem - это полет фантазии, быстрые переходы из мрачной романтики в интенсивный драйв, острый пронизывающий саунд, с тонким чувством вкуса сплетённые эмбиент, пситранс, техно - все это делает его творчество узнаваемым с первых тактов.`,
+  social: {
+    vk: `https://vk.com/kostia_aedem`,
+    instagram: `https://instagram.com/aedem.ru/`,
+    bandcamp: `https://aedem.bandcamp.com/`,
+    soundcloud: `https://soundcloud.com/aedem`,
+    facebook: `https://facebook.com/aedem.ru/`,
+    discogs: `https://www.discogs.com/ru/artist/1843808-Aedem`
+  }
+});
+const PRIMARY_SUBSTANCE = newArtist(`Primary Substance`, {
+  photo: `/img/artists/default.png`,
+  name: `Алексей Семенов`,
+  info: `российский музыкальный проект, основанный в 2010 году в Санкт-Петербурге, музыкантом, рэпером и саунд дизайнером Алексеем Семеновым.
+  Алексей Семенов известен, как создатель нескольких танцевальных и экспериментальных музыкальных проектов (Don’ttouchmebitch!, Russian outskirts, Харакири мс, there were) и участник ряда разных групп и объединений в Санкт-Петербурге и за его пределами. Участник крупных европейских и российских фестивалей, создатель ярких перформансов и необычных коллабораций.
+  “Понятие музыки для меня, это нечто гораздо большее, чем создание треков для электронно-танцевальной индустрии, в соответствии с ее правилами и законами жанров. Мои творческие задачи каждый раз предполагают новые исследования. Будь то реализация субъективных психических содержаний и абстракций вроде сиюминутного настроения в конкретной звуковой форме, или чисто технические процессы из области саунд-дизайна. Это всегда погружение в темноту неизвестного, всегда путешествие без карты…`,
+  social: {
+    facebook: `https://facebook.com/Primarysubstance`,
+    instagram: `https://instagram.com/primary_substance`,
+    vk: `https://vk.com/primarysubstance`,
+    bandcamp: `https://primarysubstance.bandcamp.com`,
+    soundcloud: `https://soundcloud.com/primarysubstance`,
+  }
+});
 const NPLM = newArtist(`NPLM`);
 const KASHAPOV = newArtist(`Kashapov`);
-const DOQTA = newArtist(`Doqta`);
-const LEM = newArtist(`Lem`);
+const DOQTA = newArtist(`DOQTA`, {
+  photo: `/img/artists/default.png`,
+  name: `Сергей Ефимов`,
+  info: `DOQTA электронный музыкант и экспериментальный продюсер из СПб, резидент Somatik Sound System (один из первых начал привлекать МС и использовать рэп акапеллы для записи соматик треков), Психея Саундсистем и bastardboogietunes soundsystem, участник и организатор многочисленных субкультурных проектов (Feodoq, Perecore, Враги, Adubtors, Stirka40, Duku and etc), техно-турист (исколесил с выступлениями треть планеты, 16 стран, сотни фестивалей и тысячи клубов, в том числе берлинский Трезор).`,
+  social: {
+    vk: `https://vk.com/doqta`,
+    bandcamp: `https://doqta.bandcamp.com/album/dissocination`,
+    soundcloud: `https://soundcloud.com/doqta-somatik`,
+  }
+});
+
+const LEM = newArtist(`Lem`, {
+  photo: `/img/artists/default.png`,
+  name: `Nicholas LEM`,
+  info: `somatik techno and ghettopsychedelic producer from Saint-P. Nicholas LEM - коренной представитель питерской школы somatik techno, оригинальный музыкант, чье творчество признано в России и за рубежом. Специалист по синтезаторам и саунд-дизайнер шведской фирмы Elektron, которая публикует его звуки в качестве официальных банков данных к своим инструментам. Экспериментальный, мощный аналоговый саунд, созданный LEM, изобилует глубокими вибрациями и виртуозными манипуляциями с ритм-машиной и свидетельствует о том, что русская электроника еще может удивлять`,
+  social: {
+    instagram: `https://www.instagram.com/nicholas_lem`,
+    vk: `https://vk.com/lemnic`,
+    facebook: `https://www.facebook.com/nicholas.lem.5`,
+    soundcloud: `https://soundcloud.com/lemnic`,
+    youtube: `http://www.youtube.com/user/lemelektron`
+  }
+});
 
 const ARTISTS = [
-  newArtist(`Arthur Tourenism`,{
+  newArtist(`Arthur Tourenism`, {
     photo: `/img/artists/default.png`,
     name: `Arthur Mikhe Tourenism`,
     info: `Minsk based composer and sound designer. Co-founder / owner of Elemental Voices
