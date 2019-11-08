@@ -220,7 +220,7 @@ const ALBUMS = [
     url: `https://api.soundcloud.com/playlists/506033388`
   },
   {
-    image: `album_escape.jpg`,
+    image: `album_girls.jpg`,
     authors: [DUBSANE],
     name: `Girls`,
     date: `01.01.2019`
