@@ -37,7 +37,6 @@ const DUBSANE = newArtist(`Dubsane`, {
   nickname: `Dubsane`,
   photo: `/img/artists/dubsane.jpg`,
   name: `Alex Palastrov`,
-  info: `Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.`,
   url: `https://api.soundcloud.com/tracks/614559213`,
   social: {
     instagram: `https://instagram.com/dubsane`,
@@ -64,7 +63,7 @@ const AEDEM = newArtist(`Aedem`, {
 const PRIMARY_SUBSTANCE = newArtist(`Primary Substance`, {
   photo: `/img/artists/default.png`,
   name: `Алексей Семенов`,
-  info: `российский музыкальный проект, основанный в 2010 году в Санкт-Петербурге, музыкантом, рэпером и саунд дизайнером Алексеем Семеновым.
+  info: `Российский музыкальный проект, основанный в 2010 году в Санкт-Петербурге, музыкантом, рэпером и саунд дизайнером Алексеем Семеновым.
   Алексей Семенов известен, как создатель нескольких танцевальных и экспериментальных музыкальных проектов (Don’ttouchmebitch!, Russian outskirts, Харакири мс, there were) и участник ряда разных групп и объединений в Санкт-Петербурге и за его пределами. Участник крупных европейских и российских фестивалей, создатель ярких перформансов и необычных коллабораций.
   “Понятие музыки для меня, это нечто гораздо большее, чем создание треков для электронно-танцевальной индустрии, в соответствии с ее правилами и законами жанров. Мои творческие задачи каждый раз предполагают новые исследования. Будь то реализация субъективных психических содержаний и абстракций вроде сиюминутного настроения в конкретной звуковой форме, или чисто технические процессы из области саунд-дизайна. Это всегда погружение в темноту неизвестного, всегда путешествие без карты…`,
   social: {
@@ -76,7 +75,15 @@ const PRIMARY_SUBSTANCE = newArtist(`Primary Substance`, {
   }
 });
 const NPLM = newArtist(`NPLM`);
-const KASHAPOV = newArtist(`Kashapov`);
+const KASHAPOV = newArtist(`Kashapov`, {
+  photo: `/img/artists/default.png`,
+  name: `Евгений Кашапов`,
+  info: `Один из первых соматик диджеев. В секте с 2014 года. В 2016 стал сооснователем подпольного бара "точка", который стал легендой петербургского андеграунда. В 2017 проехал полстраны автостопом выступая в разных городах. В 2019 создал проект машапов, в котором создаю машап ремиксы на всякие песни.`,
+  social: {
+    instagram: `https://instagram.com/evgenkashapov`,
+    vk: `https://vk.com/evgenkashapov`,
+  }
+});
 const DOQTA = newArtist(`DOQTA`, {
   photo: `/img/artists/default.png`,
   name: `Сергей Ефимов`,
@@ -91,7 +98,7 @@ const DOQTA = newArtist(`DOQTA`, {
 const LEM = newArtist(`Lem`, {
   photo: `/img/artists/default.png`,
   name: `Nicholas LEM`,
-  info: `somatik techno and ghettopsychedelic producer from Saint-P. Nicholas LEM - коренной представитель питерской школы somatik techno, оригинальный музыкант, чье творчество признано в России и за рубежом. Специалист по синтезаторам и саунд-дизайнер шведской фирмы Elektron, которая публикует его звуки в качестве официальных банков данных к своим инструментам. Экспериментальный, мощный аналоговый саунд, созданный LEM, изобилует глубокими вибрациями и виртуозными манипуляциями с ритм-машиной и свидетельствует о том, что русская электроника еще может удивлять`,
+  info: `Somatik techno and ghettopsychedelic producer from Saint-P. Nicholas LEM - коренной представитель питерской школы somatik techno, оригинальный музыкант, чье творчество признано в России и за рубежом. Специалист по синтезаторам и саунд-дизайнер шведской фирмы Elektron, которая публикует его звуки в качестве официальных банков данных к своим инструментам. Экспериментальный, мощный аналоговый саунд, созданный LEM, изобилует глубокими вибрациями и виртуозными манипуляциями с ритм-машиной и свидетельствует о том, что русская электроника еще может удивлять`,
   social: {
     instagram: `https://www.instagram.com/nicholas_lem`,
     vk: `https://vk.com/lemnic`,
@@ -128,16 +135,68 @@ Records. The old resident of Somatik Sound System.`,
   newArtist(`Dronum`),
   PCP,
   newArtist(`Tsaritsa Logiki`),
-  newArtist(`Alex Cool`),
-  newArtist(`Office Passenger`),
+  newArtist(`Alex Cool`, {
+    photo: `/img/artists/default.png`,
+    name: `Алексей Кулагин`,
+    info: `«Когда слушаешь его треки, становится ясно, что слово "COOL" в его псевдониме означает дикий, 45-градусный сибирский холод. На фоне которого, по практически безжизненному пейзажу шагает, раскачиваясь, покрытый инеем, лязгающий, металлический бит, линии acid-арпеджио вспыхивают как газовые факела, а сверху светящимися восходящими потоками летит мелодия, в которой слышны гармонии ушедшей древней империи Востока. Так могло бы звучать ритуальное техно, если бы оно появилось на планете Татуин.», - Vova PCP.`,
+    social: {
+      instagram: `https://www.instagram.com/technoalexcool/`,
+      vk: `https://vk.com/acltech`,
+      facebook: `https://www.facebook.com/alexcooltech`,
+      soundcloud: `https://soundcloud.com/alex-cool`,
+    }
+  }),
+  newArtist(`Office Passenger`, {
+    photo: `/img/artists/default.png`,
+    name: `Игорь Ряков`,
+    info: `Самогенерирующиеся закрученные сюжетные линии внутренних переживаний обычного офисного клерка
+пропущенная через кучу синтезаторов и всяческих педалей`,
+    social: {
+      instagram: `https://www.instagram.com/officepassenger/`,
+      bandcamp: `https://officepassenger.bandcamp.com/`,
+      vk: `https://vk.com/bubbleberry`,
+      facebook: `https://www.facebook.com/OfficePassenger/`,
+      soundcloud: `https://soundcloud.com/officepassenger`,
+      youtube: `https://www.youtube.com/channel/UC6UJ6HvlV485IWZhmPJ2piQ`
+    }
+  }),
   PRIMARY_SUBSTANCE,
   newArtist(`Kinestetic`),
   DOQTA,
   NPLM,
-  newArtist(`U3niko`),
+  newArtist(`U3niko`, {
+    photo: `/img/artists/default.png`,
+    name: `Евгений Малашенков`,
+    info: `The project U3niko music interpretation of the relationship of nature, people and robots. Robots as part of nature, the product of man and the highest stage of evolution.`,
+    social: {
+      instagram: `https://www.instagram.com/evgeny_malashenkov/`,
+      vk: `https://vk.com/u3nik`,
+      facebook: `https://www.facebook.com/profile.php?id=100010250283615`,
+      soundcloud: `https://soundcloud.com/user-930539857`,
+    }
+  }),
   KASHAPOV,
-  newArtist(`Kansai`),
-  newArtist(`Bees And Cobras`),
+  newArtist(`Kansai`, {
+    photo: `/img/artists/default.png`,
+    name: `Павел Кондыгин`,
+    info: `KANSAI - это DJ и Саунд продюсер из маленького посёлка Сорум, в ХМАО-Югре с населением в 1500 человек. В 2013 году KANSAI побывал в Санкт-Петербурге, познакомился с группой P.C.P., с Somatik и с их творчеством. После поездки в Питер, был написан трек - Blinking Vandals, затем еще несколько треков, а также вторая версия трека Blinking vandals. На тот момент, интернета в Соруме практически не было, поэтому треки приходилось отправлять на флешках. В 2017 году  на SS вышел альбом "Blinking vandals". В октябре 2018 года на Somatik Sound System вышел альбом "Tripster", в июле 2019 года EP "Sub Sun"`,
+    social: {
+      instagram: `https://www.instagram.com/kansai_somatik_sound_system`,
+      vk: `https://vk.com/kansai88`,
+      soundcloud: `https://soundcloud.com/x8mgt7gmkj7x`,
+    }
+  }),
+  newArtist(`Bees And Cobras`, {
+    photo: `/img/artists/default.png`,
+    name: `Евгений Псов`,
+    social: {
+      instagram: `https://www.instagram.com/eugene.eeee`,
+      vk: `https://vk.com/reveswa`,
+      facebook: `https://www.facebook.com/beesandcobras`,
+      soundcloud: `https://soundcloud.com/beesandcobras`,
+      bandcamp: `https://beesandcobras.bandcamp.com`
+    }
+  }),
   AEDEM,
   newArtist(`ICD`),
   newArtist(`Cylriel`),
