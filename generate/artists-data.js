@@ -56,6 +56,27 @@ const DOQTA = newArtist(`Doqta`);
 const LEM = newArtist(`Lem`);
 
 const ARTISTS = [
+  newArtist(`Arthur Tourenism`,{
+    photo: `/img/artists/default.png`,
+    name: `Arthur Mikhe Tourenism`,
+    info: `Minsk based composer and sound designer. Co-founder / owner of Elemental Voices
+Records. The old resident of Somatik Sound System.`,
+    social: {
+      instagram: `https://www.instagram.com/arthur_tourenism`,
+      vk: `https://vk.com/tourenism`,
+      bandcamp: `https://tourenism.bandcamp.com/`,
+      discogs: `https://www.discogs.com/artist/2730027-Arthur-Tourenism`
+    }
+  }),
+  newArtist(`Petr Nikitin`, {
+    photo: `/img/artists/default.png`,
+    name: `Nikita Petrashev`,
+    social: {
+      instagram: `https://www.instagram.com/petr._.nikitin/`,
+      vk: `https://vk.com/petrrrnikitin`,
+      soundcloud: `https://soundcloud.com/petrnikitin`,
+    }
+  }),
   DUBSANE,
   LEM,
   newArtist(`Dronum`),
@@ -70,13 +91,11 @@ const ARTISTS = [
   newArtist(`U3niko`),
   KASHAPOV,
   newArtist(`Kansai`),
-  newArtist(`Arthur Tourenism`),
   newArtist(`Bees And Cobras`),
   AEDEM,
   newArtist(`ICD`),
   newArtist(`Cylriel`),
   newArtist(`Dopesmoker`),
-  newArtist(`Petr Nikitin`),
   newArtist(`Costas Alexas`),
 ];
 
