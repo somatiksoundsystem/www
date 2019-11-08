@@ -1,6 +1,6 @@
 {
   "arthur_tourenism": {
-    "photo": "/img/artists/arthur_tourenism.jpg",
+    "photo": "/img/artists/thumb/arthur_tourenism.jpg",
     "name": "Arthur Mikhe Tourenism",
     "info": "Minsk based composer and sound designer. Co-founder / owner of Elemental Voices\nRecords. The old resident of Somatik Sound System.",
     "social": {
@@ -15,7 +15,7 @@
     "albums": []
   },
   "petr_nikitin": {
-    "photo": "/img/artists/petr_nikitin.jpg",
+    "photo": "/img/artists/thumb/petr_nikitin.jpg",
     "name": "Nikita Petrashev",
     "social": {
       "instagram": "https://www.instagram.com/petr._.nikitin/",
@@ -29,7 +29,7 @@
   },
   "dubsane": {
     "nickname": "Dubsane",
-    "photo": "/img/artists/dubsane.jpg",
+    "photo": "/img/artists/thumb/dubsane.jpg",
     "name": "Alex Palastrov",
     "url": "https://api.soundcloud.com/tracks/614559213",
     "social": {
@@ -42,7 +42,6 @@
     "href": "/artist/dubsane",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_escape.jpg",
         "name": "Escape",
         "date": "01.01.2018",
         "social": {
@@ -50,6 +49,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_escape.jpg",
         "authors": [
           "dubsane"
         ],
@@ -57,7 +57,6 @@
         "href": "/album/escape"
       },
       {
-        "image": "/img/albums/album_thumb_escape.jpg",
         "name": "Girls",
         "date": "01.01.2019",
         "social": {
@@ -65,6 +64,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_escape.jpg",
         "authors": [
           "dubsane"
         ],
@@ -74,7 +74,7 @@
     ]
   },
   "lem": {
-    "photo": "/img/artists/lem.jpg",
+    "photo": "/img/artists/thumb/lem.jpg",
     "name": "Nicholas LEM",
     "info": "Somatik techno and ghettopsychedelic producer from Saint-P. Nicholas LEM - коренной представитель питерской школы somatik techno, оригинальный музыкант, чье творчество признано в России и за рубежом. Специалист по синтезаторам и саунд-дизайнер шведской фирмы Elektron, которая публикует его звуки в качестве официальных банков данных к своим инструментам. Экспериментальный, мощный аналоговый саунд, созданный LEM, изобилует глубокими вибрациями и виртуозными манипуляциями с ритм-машиной и свидетельствует о том, что русская электроника еще может удивлять",
     "social": {
@@ -89,7 +89,6 @@
     "href": "/artist/lem",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_dlya-orgij-i-horovodov.jpg",
         "name": "Для Оргий И Хороводов",
         "date": "01.01.2018",
         "social": {
@@ -97,6 +96,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_dlya-orgij-i-horovodov.jpg",
         "authors": [
           "lem"
         ],
@@ -106,7 +106,7 @@
     ]
   },
   "dronum": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -122,7 +122,7 @@
     "albums": []
   },
   "vova_pcp": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -137,7 +137,6 @@
     "href": "/artist/vova_pcp",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_neverending-story.jpg",
         "name": "Neverendingstory",
         "date": "01.01.2018",
         "social": {
@@ -145,6 +144,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_neverending-story.jpg",
         "authors": [
           "vova_pcp"
         ],
@@ -152,7 +152,6 @@
         "href": "/album/neverendingstory"
       },
       {
-        "image": "/img/albums/album_thumb_pcp-remixes.jpg",
         "name": "Remixes",
         "date": "01.01.2018",
         "social": {
@@ -160,6 +159,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_pcp-remixes.jpg",
         "authors": [
           "vova_pcp"
         ],
@@ -169,7 +169,7 @@
     ]
   },
   "tsaritsa_logiki": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -185,7 +185,7 @@
     "albums": []
   },
   "alex_cool": {
-    "photo": "/img/artists/alex_cool.jpg",
+    "photo": "/img/artists/thumb/alex_cool.jpg",
     "name": "Алексей Кулагин",
     "info": "«Когда слушаешь его треки, становится ясно, что слово \"COOL\" в его псевдониме означает дикий, 45-градусный сибирский холод. На фоне которого, по практически безжизненному пейзажу шагает, раскачиваясь, покрытый инеем, лязгающий, металлический бит, линии acid-арпеджио вспыхивают как газовые факела, а сверху светящимися восходящими потоками летит мелодия, в которой слышны гармонии ушедшей древней империи Востока. Так могло бы звучать ритуальное техно, если бы оно появилось на планете Татуин.», - Vova PCP.",
     "social": {
@@ -200,7 +200,7 @@
     "albums": []
   },
   "office_passenger": {
-    "photo": "/img/artists/office_passenger.jpg",
+    "photo": "/img/artists/thumb/office_passenger.jpg",
     "name": "Игорь Ряков",
     "info": "Самогенерирующиеся закрученные сюжетные линии внутренних переживаний обычного офисного клерка\nпропущенная через кучу синтезаторов и всяческих педалей",
     "social": {
@@ -217,7 +217,7 @@
     "albums": []
   },
   "primary_substance": {
-    "photo": "/img/artists/primary_substance.jpg",
+    "photo": "/img/artists/thumb/primary_substance.jpg",
     "name": "Алексей Семенов",
     "info": "Российский музыкальный проект, основанный в 2010 году в Санкт-Петербурге, музыкантом, рэпером и саунд дизайнером Алексеем Семеновым.\n  Алексей Семенов известен, как создатель нескольких танцевальных и экспериментальных музыкальных проектов (Don’ttouchmebitch!, Russian outskirts, Харакири мс, there were) и участник ряда разных групп и объединений в Санкт-Петербурге и за его пределами. Участник крупных европейских и российских фестивалей, создатель ярких перформансов и необычных коллабораций.\n  “Понятие музыки для меня, это нечто гораздо большее, чем создание треков для электронно-танцевальной индустрии, в соответствии с ее правилами и законами жанров. Мои творческие задачи каждый раз предполагают новые исследования. Будь то реализация субъективных психических содержаний и абстракций вроде сиюминутного настроения в конкретной звуковой форме, или чисто технические процессы из области саунд-дизайна. Это всегда погружение в темноту неизвестного, всегда путешествие без карты…",
     "social": {
@@ -232,7 +232,6 @@
     "href": "/artist/primary_substance",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_hidden-by-the-leaves.jpg",
         "name": "Hidden by the leaves",
         "date": "01.01.2018",
         "social": {
@@ -240,6 +239,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_hidden-by-the-leaves.jpg",
         "authors": [
           "primary_substance"
         ],
@@ -249,7 +249,7 @@
     ]
   },
   "kinestetic": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -265,7 +265,7 @@
     "albums": []
   },
   "doqta": {
-    "photo": "/img/artists/doqta.jpg",
+    "photo": "/img/artists/thumb/doqta.jpg",
     "name": "Сергей Ефимов",
     "info": "DOQTA электронный музыкант и экспериментальный продюсер из СПб, резидент Somatik Sound System (один из первых начал привлекать МС и использовать рэп акапеллы для записи соматик треков), Психея Саундсистем и bastardboogietunes soundsystem, участник и организатор многочисленных субкультурных проектов (Feodoq, Perecore, Враги, Adubtors, Stirka40, Duku and etc), техно-турист (исколесил с выступлениями треть планеты, 16 стран, сотни фестивалей и тысячи клубов, в том числе берлинский Трезор).",
     "social": {
@@ -278,7 +278,6 @@
     "href": "/artist/doqta",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_dissocination.jpg",
         "name": "Dissocination",
         "date": "01.01.2018",
         "social": {
@@ -286,6 +285,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_dissocination.jpg",
         "authors": [
           "doqta"
         ],
@@ -295,7 +295,7 @@
     ]
   },
   "nplm": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -310,7 +310,6 @@
     "href": "/artist/nplm",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_luna.jpg",
         "name": "Luna",
         "date": "01.01.2018",
         "social": {
@@ -318,6 +317,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_luna.jpg",
         "authors": [
           "nplm"
         ],
@@ -327,7 +327,7 @@
     ]
   },
   "u3niko": {
-    "photo": "/img/artists/u3niko.jpg",
+    "photo": "/img/artists/thumb/u3niko.jpg",
     "name": "Евгений Малашенков",
     "info": "The project U3niko music interpretation of the relationship of nature, people and robots. Robots as part of nature, the product of man and the highest stage of evolution.",
     "social": {
@@ -342,7 +342,7 @@
     "albums": []
   },
   "kashapov": {
-    "photo": "/img/artists/kashapov.jpg",
+    "photo": "/img/artists/thumb/kashapov.jpg",
     "name": "Евгений Кашапов",
     "info": "Один из первых соматик диджеев. В секте с 2014 года. В 2016 стал сооснователем подпольного бара \"точка\", который стал легендой петербургского андеграунда. В 2017 проехал полстраны автостопом выступая в разных городах. В 2019 создал проект машапов, в котором создаю машап ремиксы на всякие песни.",
     "social": {
@@ -354,7 +354,6 @@
     "href": "/artist/kashapov",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_mashapov.jpg",
         "name": "Mashapov",
         "date": "01.01.2018",
         "social": {
@@ -362,6 +361,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_mashapov.jpg",
         "authors": [
           "kashapov"
         ],
@@ -371,7 +371,7 @@
     ]
   },
   "kansai": {
-    "photo": "/img/artists/kansai.jpg",
+    "photo": "/img/artists/thumb/kansai.jpg",
     "name": "Павел Кондыгин",
     "info": "KANSAI - это DJ и Саунд продюсер из маленького посёлка Сорум, в ХМАО-Югре с населением в 1500 человек. В 2013 году KANSAI побывал в Санкт-Петербурге, познакомился с группой P.C.P., с Somatik и с их творчеством. После поездки в Питер, был написан трек - Blinking Vandals, затем еще несколько треков, а также вторая версия трека Blinking vandals. На тот момент, интернета в Соруме практически не было, поэтому треки приходилось отправлять на флешках. В 2017 году  на SS вышел альбом \"Blinking vandals\". В октябре 2018 года на Somatik Sound System вышел альбом \"Tripster\", в июле 2019 года EP \"Sub Sun\"",
     "social": {
@@ -385,7 +385,7 @@
     "albums": []
   },
   "bees_and_cobras": {
-    "photo": "/img/artists/bees_and_cobras.jpg",
+    "photo": "/img/artists/thumb/bees_and_cobras.jpg",
     "name": "Евгений Псов",
     "social": {
       "instagram": "https://www.instagram.com/eugene.eeee",
@@ -400,7 +400,7 @@
     "albums": []
   },
   "aedem": {
-    "photo": "/img/artists/aedem.jpg",
+    "photo": "/img/artists/thumb/aedem.jpg",
     "name": "Константин Терентьев",
     "info": "Электронный музыкант из Санкт-Петербурга. Автор трех альбомов, выпущенных на Microcosmos Records. С 2016 года резидент Somatik Sound System, где выпустил несколько релизов, под которые любители самых разных жанров электроники успешно двигают телами в ритме 90 bpm. Музыка Aedem - это полет фантазии, быстрые переходы из мрачной романтики в интенсивный драйв, острый пронизывающий саунд, с тонким чувством вкуса сплетённые эмбиент, пситранс, техно - все это делает его творчество узнаваемым с первых тактов.",
     "social": {
@@ -416,7 +416,6 @@
     "href": "/artist/aedem",
     "albums": [
       {
-        "image": "/img/albums/album_thumb_eat-my-face.jpg",
         "name": "Eat my face",
         "date": "01.01.2018",
         "social": {
@@ -424,6 +423,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_eat-my-face.jpg",
         "authors": [
           "aedem"
         ],
@@ -431,7 +431,6 @@
         "href": "/album/eat_my_face"
       },
       {
-        "image": "/img/albums/album_thumb_raver-baby.jpg",
         "name": "Raver baby",
         "date": "01.01.2018",
         "social": {
@@ -439,6 +438,7 @@
           "soundcloud": "https://soundcloud.com/altabdubsane/sets/dubsane-escape"
         },
         "url": "https://api.soundcloud.com/playlists/506033388",
+        "image": "/img/albums/thumb/album_raver-baby.jpg",
         "authors": [
           "aedem"
         ],
@@ -448,7 +448,7 @@
     ]
   },
   "icd": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -464,7 +464,7 @@
     "albums": []
   },
   "cylriel": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -480,7 +480,7 @@
     "albums": []
   },
   "dopesmoker": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",
@@ -496,7 +496,7 @@
     "albums": []
   },
   "costas_alexas": {
-    "photo": "/img/artists/default.png",
+    "photo": "/img/artists/thumb/default.png",
     "name": "Ivanov Ivan Invanovich",
     "info": "Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.",
     "url": "https://api.soundcloud.com/tracks/614559213",

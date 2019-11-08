@@ -5,7 +5,8 @@ const checkUnique = require('./utils.js');
 
 const ARTIST_PATH = `/artist/`;
 const ALBUM_PATH = `/album/`;
-const PHOTO_PATH = `/img/artists/`;
+const ARTIST_PHOTO_PATH = `/img/artists/thumb/`;
+const ALBUM_PHOTO_PATH = `/img/albums/thumb/`;
 
 const DEFAULT_ARTIST_INFO = {
   photo: `default.png`,
@@ -29,7 +30,7 @@ const checkUniqueArtist = checkUnique(
 const newArtist = (nickname, info = DEFAULT_ARTIST_INFO) => {
   const id = generateId(nickname);
   const href = ARTIST_PATH + id;
-  const photo = PHOTO_PATH + info.photo;
+  const photo = ARTIST_PHOTO_PATH + info.photo;
   const artist = {...info, ...{id, nickname, href, photo, albums: []}};
   checkUniqueArtist(artist);
   return artist;
@@ -208,7 +209,7 @@ Records. The old resident of Somatik Sound System.`,
 
 const ALBUMS = [
   {
-    image: `/img/albums/album_thumb_escape.jpg`,
+    image: `album_escape.jpg`,
     authors: [DUBSANE],
     name: `Escape`,
     date: `01.01.2018`,
@@ -219,60 +220,59 @@ const ALBUMS = [
     url: `https://api.soundcloud.com/playlists/506033388`
   },
   {
-    image: `/img/albums/album_thumb_escape.jpg`,
+    image: `album_escape.jpg`,
     authors: [DUBSANE],
     name: `Girls`,
     date: `01.01.2019`
   },
   {
     name: `Neverendingstory`,
-    image: `/img/albums/album_thumb_neverending-story.jpg`,
+    image: `album_neverending-story.jpg`,
     authors: [PCP]
   },
   {
-    image: `/img/albums/album_thumb_eat-my-face.jpg`,
+    image: `album_eat-my-face.jpg`,
     authors: [AEDEM],
     name: `Eat my face`
   },
   {
-    image: `/img/albums/album_thumb_hidden-by-the-leaves.jpg`,
+    image: `album_hidden-by-the-leaves.jpg`,
     authors: [PRIMARY_SUBSTANCE],
     name: `Hidden by the leaves`
   },
   {
-    image: `/img/albums/album_thumb_luna.jpg`,
+    image: `album_luna.jpg`,
     authors: [NPLM],
     name: `Luna`
   },
   {
-    image: `/img/albums/album_thumb_mashapov.jpg`,
+    image: `album_mashapov.jpg`,
     authors: [KASHAPOV],
     name: `Mashapov`
   },
   {
-    image: `/img/albums/album_thumb_raver-baby.jpg`,
+    image: `album_raver-baby.jpg`,
     authors: [AEDEM],
     name: `Raver baby`
   },
   {
-    image: `/img/albums/album_thumb_dissocination.jpg`,
+    image: `album_dissocination.jpg`,
     authors: [DOQTA],
     name: `Dissocination`
   },
   {
-    image: `/img/albums/album_thumb_dlya-orgij-i-horovodov.jpg`,
+    image: `album_dlya-orgij-i-horovodov.jpg`,
     authors: [LEM],
     name: `Для Оргий И Хороводов`
   },
   {
-    image: `/img/albums/album_thumb_pcp-remixes.jpg`,
+    image: `album_pcp-remixes.jpg`,
     authors: [PCP],
     name: `Remixes`
   }
 ];
 
 const DEFAULT_ALBUM_INFO = {
-  image: `/img/albums/album_thumb_escape.jpg`,
   name: `Escape`,
   date: `01.01.2018`,
   social: {
@@ -287,16 +287,19 @@ const checkUniqueAlbum = checkUnique(
     throw new Error(`Duplicate id [${id}] for album '${name}'`)
   }
 );
-ALBUMS
-  .forEach((it) => {
-    const id = generateId(it.name);
-    const href = ALBUM_PATH + id;
-    const album = {...DEFAULT_ALBUM_INFO, ...it, ...{id, href}};
-    checkUniqueAlbum(album);
-    for (const artist of album.authors) {
-      artist.albums.push(album);
-    }
-  });
+
+const createAlbum = (it) => {
+  const id = generateId(it.name);
+  const href = ALBUM_PATH + id;
+  const image = ALBUM_PHOTO_PATH + it.image;
+  const album = {...DEFAULT_ALBUM_INFO, ...it, ...{id, href, image}};
+  checkUniqueAlbum(album);
+  for (const artist of album.authors) {
+    artist.albums.push(album);
+  }
+};
+
+ALBUMS.forEach(createAlbum);
 
 
 module.exports = ARTISTS;
