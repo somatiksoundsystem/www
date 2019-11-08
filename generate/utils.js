@@ -16,4 +16,13 @@ const checkUnique = (onNotUnique) => {
   }
 };
 
-module.exports = checkUnique;
+const toObject = (array) => array.reduce((acc, it, idx) => {
+  if (Array.isArray(it)) {
+    acc[it[0]] = it[1];
+  } else {
+    acc[it] = idx;
+  }
+  return acc;
+}, {});
+
+module.exports = {checkUnique, toObject};
