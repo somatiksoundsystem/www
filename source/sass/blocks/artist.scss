@@ -38,11 +38,11 @@ $transparent-background: rgba($color-black, 0.55);
 }
 
 .artist__social {
-  padding: 10px;
+  margin: 10px;
   display: flex;
-  justify-content: space-between;
 
-  width: 160px;
+  min-width: 280px;
+  overflow-x: auto;
 
   flex-flow: row nowrap;
 }
