@@ -9,13 +9,14 @@ block header
 block main
   .artist
     h1.artist__nickname= artist.nickname
-    img.artist__img(src=artist.photo, alt=artist.nickname, width='1494', height='2160')
+    img.artist__img(src=artist.photo, alt=artist.nickname, width='300', height='400')
     .artist__social
       each url, type in artist.social
         +social(type, url)
     h1.artist__name= artist.name
     p.artist__info= artist.info
-  +player(album.url, '100%', 166)
+  if artist.social.soundcloud
+    +player(artist.social.soundcloud, '100%', 166)
   .artist__albums
     ul.albums
       each album in artist.albums
