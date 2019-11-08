@@ -28,6 +28,9 @@ const paths = {
       'node_modules/@fortawesome/fontawesome-free/svgs/brands/facebook.svg',
       'node_modules/@fortawesome/fontawesome-free/svgs/brands/vk.svg',
       'node_modules/@fortawesome/fontawesome-free/svgs/brands/soundcloud.svg',
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/youtube.svg',
+      'node_modules/@fortawesome/fontawesome-free/svgs/brands/bandcamp.svg',
+      'source/img/svgs/discogs.svg',
     ],
     dest: 'build/icon/'
   },
