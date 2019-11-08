@@ -48,7 +48,7 @@ const DUBSANE = newArtist(`Dubsane`, {
 
 const PCP = newArtist(`Vova PCP`);
 const AEDEM = newArtist(`Aedem`, {
-  photo: `/img/artists/default.png`,
+  photo: `/img/artists/aedem.jpg`,
   name: `Константин Терентьев`,
   info: `Электронный музыкант из Санкт-Петербурга. Автор трех альбомов, выпущенных на Microcosmos Records. С 2016 года резидент Somatik Sound System, где выпустил несколько релизов, под которые любители самых разных жанров электроники успешно двигают телами в ритме 90 bpm. Музыка Aedem - это полет фантазии, быстрые переходы из мрачной романтики в интенсивный драйв, острый пронизывающий саунд, с тонким чувством вкуса сплетённые эмбиент, пситранс, техно - все это делает его творчество узнаваемым с первых тактов.`,
   social: {
@@ -61,7 +61,7 @@ const AEDEM = newArtist(`Aedem`, {
   }
 });
 const PRIMARY_SUBSTANCE = newArtist(`Primary Substance`, {
-  photo: `/img/artists/default.png`,
+  photo: `/img/artists/primary_substance.jpg`,
   name: `Алексей Семенов`,
   info: `Российский музыкальный проект, основанный в 2010 году в Санкт-Петербурге, музыкантом, рэпером и саунд дизайнером Алексеем Семеновым.
   Алексей Семенов известен, как создатель нескольких танцевальных и экспериментальных музыкальных проектов (Don’ttouchmebitch!, Russian outskirts, Харакири мс, there were) и участник ряда разных групп и объединений в Санкт-Петербурге и за его пределами. Участник крупных европейских и российских фестивалей, создатель ярких перформансов и необычных коллабораций.
@@ -76,7 +76,7 @@ const PRIMARY_SUBSTANCE = newArtist(`Primary Substance`, {
 });
 const NPLM = newArtist(`NPLM`);
 const KASHAPOV = newArtist(`Kashapov`, {
-  photo: `/img/artists/default.png`,
+  photo: `/img/artists/kashapov.jpg`,
   name: `Евгений Кашапов`,
   info: `Один из первых соматик диджеев. В секте с 2014 года. В 2016 стал сооснователем подпольного бара "точка", который стал легендой петербургского андеграунда. В 2017 проехал полстраны автостопом выступая в разных городах. В 2019 создал проект машапов, в котором создаю машап ремиксы на всякие песни.`,
   social: {
@@ -85,7 +85,7 @@ const KASHAPOV = newArtist(`Kashapov`, {
   }
 });
 const DOQTA = newArtist(`DOQTA`, {
-  photo: `/img/artists/default.png`,
+  photo: `/img/artists/doqta.jpg`,
   name: `Сергей Ефимов`,
   info: `DOQTA электронный музыкант и экспериментальный продюсер из СПб, резидент Somatik Sound System (один из первых начал привлекать МС и использовать рэп акапеллы для записи соматик треков), Психея Саундсистем и bastardboogietunes soundsystem, участник и организатор многочисленных субкультурных проектов (Feodoq, Perecore, Враги, Adubtors, Stirka40, Duku and etc), техно-турист (исколесил с выступлениями треть планеты, 16 стран, сотни фестивалей и тысячи клубов, в том числе берлинский Трезор).`,
   social: {
@@ -96,7 +96,7 @@ const DOQTA = newArtist(`DOQTA`, {
 });
 
 const LEM = newArtist(`Lem`, {
-  photo: `/img/artists/default.png`,
+  photo: `/img/artists/lem.jpg`,
   name: `Nicholas LEM`,
   info: `Somatik techno and ghettopsychedelic producer from Saint-P. Nicholas LEM - коренной представитель питерской школы somatik techno, оригинальный музыкант, чье творчество признано в России и за рубежом. Специалист по синтезаторам и саунд-дизайнер шведской фирмы Elektron, которая публикует его звуки в качестве официальных банков данных к своим инструментам. Экспериментальный, мощный аналоговый саунд, созданный LEM, изобилует глубокими вибрациями и виртуозными манипуляциями с ритм-машиной и свидетельствует о том, что русская электроника еще может удивлять`,
   social: {
@@ -110,7 +110,7 @@ const LEM = newArtist(`Lem`, {
 
 const ARTISTS = [
   newArtist(`Arthur Tourenism`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/arthur_tourenism.jpg`,
     name: `Arthur Mikhe Tourenism`,
     info: `Minsk based composer and sound designer. Co-founder / owner of Elemental Voices
 Records. The old resident of Somatik Sound System.`,
@@ -122,7 +122,7 @@ Records. The old resident of Somatik Sound System.`,
     }
   }),
   newArtist(`Petr Nikitin`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/petr_nikitin.jpg`,
     name: `Nikita Petrashev`,
     social: {
       instagram: `https://www.instagram.com/petr._.nikitin/`,
@@ -136,7 +136,7 @@ Records. The old resident of Somatik Sound System.`,
   PCP,
   newArtist(`Tsaritsa Logiki`),
   newArtist(`Alex Cool`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/alex_cool.jpg`,
     name: `Алексей Кулагин`,
     info: `«Когда слушаешь его треки, становится ясно, что слово "COOL" в его псевдониме означает дикий, 45-градусный сибирский холод. На фоне которого, по практически безжизненному пейзажу шагает, раскачиваясь, покрытый инеем, лязгающий, металлический бит, линии acid-арпеджио вспыхивают как газовые факела, а сверху светящимися восходящими потоками летит мелодия, в которой слышны гармонии ушедшей древней империи Востока. Так могло бы звучать ритуальное техно, если бы оно появилось на планете Татуин.», - Vova PCP.`,
     social: {
@@ -147,7 +147,7 @@ Records. The old resident of Somatik Sound System.`,
     }
   }),
   newArtist(`Office Passenger`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/office_passenger.jpg`,
     name: `Игорь Ряков`,
     info: `Самогенерирующиеся закрученные сюжетные линии внутренних переживаний обычного офисного клерка
 пропущенная через кучу синтезаторов и всяческих педалей`,
@@ -165,7 +165,7 @@ Records. The old resident of Somatik Sound System.`,
   DOQTA,
   NPLM,
   newArtist(`U3niko`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/u3niko.jpg`,
     name: `Евгений Малашенков`,
     info: `The project U3niko music interpretation of the relationship of nature, people and robots. Robots as part of nature, the product of man and the highest stage of evolution.`,
     social: {
@@ -177,7 +177,7 @@ Records. The old resident of Somatik Sound System.`,
   }),
   KASHAPOV,
   newArtist(`Kansai`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/kansai.jpg`,
     name: `Павел Кондыгин`,
     info: `KANSAI - это DJ и Саунд продюсер из маленького посёлка Сорум, в ХМАО-Югре с населением в 1500 человек. В 2013 году KANSAI побывал в Санкт-Петербурге, познакомился с группой P.C.P., с Somatik и с их творчеством. После поездки в Питер, был написан трек - Blinking Vandals, затем еще несколько треков, а также вторая версия трека Blinking vandals. На тот момент, интернета в Соруме практически не было, поэтому треки приходилось отправлять на флешках. В 2017 году  на SS вышел альбом "Blinking vandals". В октябре 2018 года на Somatik Sound System вышел альбом "Tripster", в июле 2019 года EP "Sub Sun"`,
     social: {
@@ -187,7 +187,7 @@ Records. The old resident of Somatik Sound System.`,
     }
   }),
   newArtist(`Bees And Cobras`, {
-    photo: `/img/artists/default.png`,
+    photo: `/img/artists/bees_and_cobras.jpg`,
     name: `Евгений Псов`,
     social: {
       instagram: `https://www.instagram.com/eugene.eeee`,
