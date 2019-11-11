@@ -17,14 +17,17 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  background-color: $color-white;
+
+  color: $color-black;
+
+  background-color: $color-black;
   background-image: url("../img/pattern-4.jpg");
   background-position: top right;
   background-repeat: repeat;
+
   font-size: 16px;
   font-family: $primary-font-family;
   font-weight: 500;
-  color: $color-black;
   -webkit-font-smoothing: antialiased;
   //noinspection CssUnknownProperty
   -moz-font-smoothing: antialiased;
