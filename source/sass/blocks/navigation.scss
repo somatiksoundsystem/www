@@ -1,6 +1,5 @@
 .navigation {
   display: block;
-  padding: 10px 0 10px;
 }
 
 .navigation__list {
@@ -15,7 +14,7 @@
   &--open,
   &--nojs {
     max-height: 100vh;
-    padding: 0;
+    padding: 25px 0 0;
   }
 }
 
@@ -49,7 +48,7 @@
 .navigation__button {
   position: absolute;
   z-index: 99;
-  top: 56px;
+  top: 40px;
   right: 30px;
   width: 40px;
   height: 3px;
@@ -92,13 +91,6 @@
 
   &--nojs {
     display: none;
-  }
-}
-
-
-@media screen and (min-width: $mobile-breakpoint) {
-  .navigation__list {
-    flex-direction: row;
   }
 }
 

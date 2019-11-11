@@ -13,7 +13,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  @media screen and (min-width: $mobile-breakpoint) {
+  @media screen and (min-width: $tablet-breakpoint) {
     flex-direction: row;
   }
 }
@@ -21,8 +21,10 @@
 .header__logo {
   position: relative;
   z-index: 1;
-  top: 18px;
-  margin-bottom: 15px;
+  top: 20px;
+
+  margin-bottom: 0;
+
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -43,10 +45,5 @@
   .header__container {
     flex-wrap: nowrap;
     flex-direction: row;
-  }
-
-  .header__logo {
-    margin-bottom: 0;
-    top: 20px;
   }
 }
