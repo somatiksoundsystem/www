@@ -48,34 +48,43 @@
 .navigation__button {
   position: absolute;
   z-index: 99;
-  top: 40px;
+  top: 20px;
   right: 30px;
   width: 40px;
-  height: 3px;
-  background: $color-white;
-  font-size: 0;
+  height: 40px;
+  padding: 0;
+
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
-  &::before,
-  &::after {
-    content: "";
+  .navigation__burger {
     position: absolute;
-    left: 0;
+    font-size: 0;
     width: 40px;
     height: 3px;
     background: $color-white;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: $color-white;
+    }
+
+    &::before {
+      top: -10px;
+    }
+
+    &::after {
+      bottom: -10px;
+    }
   }
 
-  &::before {
-    top: -10px;
-  }
-
-  &::after {
-    bottom: -10px;
-  }
-
-  &--open {
+  &--open .navigation__burger {
     background-color: transparent;
 
     &::before {

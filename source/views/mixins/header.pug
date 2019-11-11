@@ -11,6 +11,7 @@ mixin header(current)
             if name !== current
               li.navigation__item
                 a.navigation__link(href=href)= name
-        button.navigation__button.navigation__button--nojs Navigation button
+        button.navigation__button.navigation__button--nojs
+          .navigation__burger Navigation button
 append scripts
   script(src='/scripts/navigation.js')
