@@ -39,9 +39,10 @@ const checkUniqueArtist = checkUnique(
 const newArtist = (nickname, info = DEFAULT_ARTIST_INFO) => {
   const id = generateId(nickname);
   const href = ARTIST_PATH + id;
+  const photo_url = info.photo;
   const photo = ARTIST_PHOTO_PATH + info.photo;
   const social = toObject(Object.entries(info.social).sort((left, right) => SOCIAL_ORDER[left[0]] - SOCIAL_ORDER[right[0]]));
-  const artist = {...info, ...{id, nickname, href, photo, social, albums: []}};
+  const artist = {...info, ...{id, nickname, href, photo, photo_url, social, albums: []}};
   checkUniqueArtist(artist);
   return artist;
 };
@@ -311,5 +312,4 @@ const createAlbum = (it) => {
 
 ALBUMS.forEach(createAlbum);
 
-
-module.exports = ARTISTS;
+module.exports = {ARTISTS, ALBUMS};

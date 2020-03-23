@@ -3,7 +3,7 @@
 const log = require('fancy-log');
 const fs = require('fs');
 const util = require('util');
-const artists = require('./artists-data');
+const artists = require('./artists-data').ARTISTS;
 
 const writeFile = util.promisify(fs.writeFile);
 
