@@ -5,3 +5,12 @@ console.log(ALBUMS.map((it) => `('${it.name}',TIMESTAMP(STR_TO_DATE('${it.date ?
 
 console.log(ARTISTS.map((it) => `('${it.nickname}','${it.name}','${it.info}','${it.photo_url}')`)
   .join(`,\n`));
+
+const eachArtist = (it) => {
+  console.log(`$artist = Artist::resolve("${it.nickname}");`)
+  Object.entries(it.social).forEach(([key, value]) => {
+    console.log(`$artist->addSocialLink("${key}", "${value}");`)
+  })
+};
+
+ARTISTS.forEach(eachArtist)
