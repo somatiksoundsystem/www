@@ -23,10 +23,6 @@ const DEFAULT_ARTIST_INFO = {
   info: `Consequuntur omnis non qui voluptatem praesentium libero eos non. Quibusdam vitae\n        aperiam inventore itaque sapiente rerum laboriosam accusamus. Non molestiae voluptas nobis possimus est\n        expedita. Impedit repellendus repellat voluptas fugit. In consectetur ipsum qui. Dolorem mollitia voluptatem\n        provident reprehenderit.`,
   url: `https://api.soundcloud.com/tracks/614559213`,
   social: {
-    [INSTAGRAM]: `https://instagram.com/dubsane`,
-    [VK]: `https://vk.com/dubsane`,
-    [FACEBOOK]: `https://fb.com/dubsane`,
-    [SOUND_CLOUD]: `https://soundcloud.com/altabdubsane`
   }
 };
 
@@ -41,7 +37,8 @@ const newArtist = (nickname, info = DEFAULT_ARTIST_INFO) => {
   const href = ARTIST_PATH + id;
   const photo_url = info.photo;
   const photo = ARTIST_PHOTO_PATH + info.photo;
-  const social = toObject(Object.entries(info.social).sort((left, right) => SOCIAL_ORDER[left[0]] - SOCIAL_ORDER[right[0]]));
+  const social = toObject(Object.entries(info.social)
+    .sort((left, right) => SOCIAL_ORDER[left[0]] - SOCIAL_ORDER[right[0]]));
   const artist = {...info, ...{id, nickname, href, photo, photo_url, social, albums: []}};
   checkUniqueArtist(artist);
   return artist;
