@@ -14,3 +14,14 @@ const eachArtist = (it) => {
 };
 
 ARTISTS.forEach(eachArtist)
+
+const resolveAlbum = (it) => {
+  console.log(`$artist = Artist::resolve("${it.nickname}");`)
+  for (const album of it.albums) {
+    console.log(`$album = Album::resolve("${album.name}");`)
+    console.log(`$artist->addAlbum($album);`)
+  }
+};
+
+ARTISTS.forEach(resolveAlbum)
+
