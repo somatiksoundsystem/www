@@ -25,3 +25,10 @@ const resolveAlbum = (it) => {
 
 ARTISTS.forEach(resolveAlbum)
 
+ALBUMS.forEach((it) => {
+  console.log(`$album = Album::resolve("${it.name}");`)
+  Object.entries(it.social || {}).forEach(([key, value]) => {
+    console.log(`$album->addSocialLink("${key}", "${value}");`)
+  })
+})
+
