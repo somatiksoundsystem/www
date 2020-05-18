@@ -1,0 +1,22 @@
+.login {
+  display: table;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+//Vertical align hack
+.login__helper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.login__form {
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+}
