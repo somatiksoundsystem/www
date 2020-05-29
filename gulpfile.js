@@ -42,8 +42,8 @@ const paths = {
     src: 'source/fonts/**/*',
     dest: 'build/fonts/'
   },
-  cname: {
-    src: 'CNAME',
+  files: {
+    src: ['CNAME', 'robots.txt'],
     dest: 'build/'
   },
   scripts: {
@@ -127,13 +127,13 @@ gulp.task('fonts', () => {
 });
 
 
-gulp.task('cname', () => {
-  return gulp.src(paths.cname.src)
-    .pipe(gulp.dest(paths.cname.dest));
+gulp.task('copy:files', () => {
+  return gulp.src(paths.files.src)
+    .pipe(gulp.dest(paths.files.dest));
 });
 
 
-gulp.task('static', gulp.parallel('scripts', 'style', 'images', 'icons', 'fonts', 'cname', 'favicon'));
+gulp.task('static', gulp.parallel('scripts', 'style', 'images', 'icons', 'fonts', 'copy:files', 'favicon'));
 
 
 gulp.task('copy', gulp.parallel('pug', 'static'));
