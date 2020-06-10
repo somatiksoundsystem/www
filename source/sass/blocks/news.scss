@@ -63,6 +63,10 @@ $white-background: #cccccca6;
 
 .news__text {
   margin: 5px 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 
@@ -77,6 +81,10 @@ $white-background: #cccccca6;
 
   a {
     color: #2c2c6e;
+  }
+
+  p {
+    margin: 0;
   }
 }
 
