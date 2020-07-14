@@ -6,17 +6,16 @@ include ../mixins/player
 block header
   +header(`Album: ${album.name}`)
 block main
-  .album
-    h1.album__name=album.name
-    img.album__img(src=album.image alt=album.name width='300' height='300')
+  .item
+    h1.item__title=album.name
+    img.item__img.item__img--square(src=album.image alt=album.name width='300' height='300')
     if album.social
-      .album__social
-        .artist__social
+      .item__social
           each url, type in album.social
             +social(type, url)
-    h2.album__author
+    h2.item__name
       each author in album.authors
-        a.albums__link(href=author.href)
+        a(href=author.href)
           =author.nickname
-    h2.album__release-date Release date: #{album.date}
+    h2.album__subtitle Release date: #{album.date}
   +player(album.url, '100%', 450)
