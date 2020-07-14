@@ -1,0 +1,33 @@
+{
+  "soma-trusy": {
+    "photo": "/img/shop/thumb/default.png",
+    "name": "Сома-трусы",
+    "info": "Тёплый мягкий охуенный и суперпиздатый свитшот, бери его скорее сука!",
+    "id": "soma-trusy",
+    "href": "/shop/soma-trusy",
+    "photo_url": "default.png"
+  },
+  "chasy_somatik": {
+    "photo": "/img/shop/thumb/default.png",
+    "name": "Часы Соматик",
+    "info": "Тёплый мягкий охуенный и суперпиздатый свитшот, бери его скорее сука!",
+    "id": "chasy_somatik",
+    "href": "/shop/chasy_somatik",
+    "photo_url": "default.png"
+  },
+  "kofta_somatik": {
+    "info": "Моднейший",
+    "id": "kofta_somatik",
+    "name": "Кофта Соматик",
+    "href": "/shop/kofta_somatik",
+    "photo": "/img/shop/thumb/undefined"
+  },
+  "kepka_somatik": {
+    "photo": "/img/shop/thumb/default.png",
+    "name": "Кепка Соматик",
+    "info": "Тёплый мягкий охуенный и суперпиздатый свитшот, бери его скорее сука!",
+    "id": "kepka_somatik",
+    "href": "/shop/kepka_somatik",
+    "photo_url": "default.png"
+  }
+}
