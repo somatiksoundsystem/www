@@ -1,0 +1,13 @@
+extends ../layout
+include ../mixins/header
+include ../mixins/album
+
+block header
+  +header('Shop')
+block main
+  ul.grid
+    each item in shopItems
+      li.grid__item
+        a.grid__link(href=item.href || 'page-in-progress.html')
+          img.grid__img.grid__img--square(src=item.photo alt=item.name width='300' height='300')
+          h2.grid__title= item.name

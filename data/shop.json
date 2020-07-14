@@ -16,11 +16,12 @@
     "photo_url": "default.png"
   },
   "kofta_somatik": {
+    "photo": "/img/shop/thumb/default.png",
+    "name": "Кофта Соматик",
     "info": "Моднейший",
     "id": "kofta_somatik",
-    "name": "Кофта Соматик",
     "href": "/shop/kofta_somatik",
-    "photo": "/img/shop/thumb/undefined"
+    "photo_url": "default.png"
   },
   "kepka_somatik": {
     "photo": "/img/shop/thumb/default.png",

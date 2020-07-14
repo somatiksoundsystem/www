@@ -19,6 +19,7 @@ const checkUniqueName = checkUnique(
 );
 
 const newShopItem = (name, info = DEFAULT_SHOP_ITEM_INFO) => {
+  info = {...DEFAULT_SHOP_ITEM_INFO, ...info};
   const id = generateId(name);
   const href = SHOP_ITEM_PATH + id;
   const photo_url = info.photo;

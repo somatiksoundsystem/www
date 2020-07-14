@@ -11,7 +11,7 @@ const GLOBALS = {
     Albums: '/',
     Artists: '/artists',
     News: '/news',
-    Shop: '/page-in-progress',
+    Shop: '/shop',
     Contacts: '/page-in-progress'
   }
 };
@@ -26,6 +26,7 @@ log(`Root: ${root}`);
 const dataDirPath = path.resolve(root, 'data');
 const ARTISTS_JSON_PATH = path.resolve(dataDirPath, 'artists.json');
 const NEWS_JSON_PATH = path.resolve(dataDirPath, 'news.json');
+const SHOP_JSON_PATH = path.resolve(dataDirPath, 'shop.json');
 
 const artists = require(ARTISTS_JSON_PATH);
 
@@ -109,12 +110,21 @@ const writeNews = async (output) => {
   return writeFile(path.resolve(output, 'news.html'), html);
 };
 
+const shop = require(SHOP_JSON_PATH);
+const writeShop = async (output) => {
+  const fn = pug.compileFile(path.resolve(root, 'source/views/shop/index.pug'), {});
+  const html = fn(Object.assign(GLOBALS, {shopItems: Object.values(shop)}));
+
+  return writeFile(path.resolve(output, 'shop.html'), html);
+};
+
 module.exports = async (outputPath) => {
   outputPath = await createDirs(outputPath);
 
   const albumsPromise = writeAlbums(outputPath);
   const artistsPromise = writeArtists(outputPath);
   const newsPromise = writeNews(outputPath);
+  const shopPromise = writeShop(outputPath);
 
-  return Promise.all([albumsPromise, artistsPromise, newsPromise]);
+  return Promise.all([albumsPromise, artistsPromise, newsPromise, shopPromise]);
 };
