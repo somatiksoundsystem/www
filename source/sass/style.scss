@@ -3,11 +3,14 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
+// Layout
+@import "blocks/main.scss";
+@import "blocks/grid.scss";
+@import "blocks/item.scss";
+// Common blocks
 @import "blocks/header.scss";
 @import "blocks/navigation.scss";
 @import "blocks/social-link.scss";
-@import "blocks/main.scss";
-@import "blocks/grid.scss";
 // Main blocks
 @import "blocks/album.scss";
 @import "blocks/artist.scss";
