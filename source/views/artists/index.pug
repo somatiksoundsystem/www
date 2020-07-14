@@ -4,9 +4,9 @@ include ../mixins/header
 block header
   +header('Artists')
 block main
-  ul.artists
+  ul.grid
     each artist in artists
-      li.artists__item
-        a.artists__link(href=artist.href || 'page-in-progress.html')
-          img.artists__img(src=artist.photo alt=artist.nickname width='300' height='400')
-          h2.artists__title= artist.nickname
+      li.grid__item
+        a.grid__link(href=artist.href || 'page-in-progress.html')
+          img.grid__img.grid__img--rect(src=artist.photo alt=artist.nickname width='300' height='400')
+          h2.grid__title= artist.nickname

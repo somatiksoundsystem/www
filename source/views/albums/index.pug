@@ -5,6 +5,6 @@ include ../mixins/album
 block header
   +header('Albums')
 block main
-  ul.albums
+  ul.grid
     each album in albums
       +album(album)
