@@ -17,5 +17,5 @@ block main
       each author in album.authors
         a(href=author.href)
           =author.nickname
-    h2.album__subtitle Release date: #{album.date}
+    h2.item__subtitle Release date: #{album.date}
   +player(album.url, '100%', 450)
